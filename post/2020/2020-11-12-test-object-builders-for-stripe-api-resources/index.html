@@ -1,363 +1,149 @@
-<!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        
-
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Test-object builders for Stripe API resources</title>
-        
-        <style>
-
-    html body {
-        font-family: 'Raleway', sans-serif;
-        background-color: white;
-    }
-
-    :root {
-        --accent: black;
-        --border-width:  0 ;
-    }
-
-</style>
-
-
-<link rel="stylesheet" href="https://nielsvaneck.com/css/main.css">
-
-
-
-
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/idea.min.css"> 
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
- 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/sql.min.js"></script>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/makefile.min.js"></script>
-    
-    <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.80.0" />
-        
-
-        
-            <script async src="https://www.googletagmanager.com/gtag/js?id=48666603"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments)};
-              gtag('js', new Date());
-              gtag('config', '48666603');
-            </script>
-        
-
-        
-            <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
-
-        
-
-    </head>
-
-    <body>
-        
-
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand visible-xs" href="#">Test-object builders for Stripe API resources</a>
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse">
-                    
-                        <ul class="nav navbar-nav">
-                            
-                                <li><a href="/post/">Posts</a></li>
-                            
-                                <li><a href="/about/">About</a></li>
-                            
-                        </ul>
-                    
-                    
-                        <ul class="nav navbar-nav navbar-right">
-                            
-                                <li class="navbar-icon"><a href="https://github.com/nielsvaneck/"><i class="fab fa-github"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://twitter.com/niels/"><i class="fab fa-twitter"></i></a></li>
-                            
-                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/nielsvaneck/"><i class="fab fa-linkedin"></i></a></li>
-                            
-                        </ul>
-                    
-                </div>
-            </div>
-        </nav>
-
-
-<main>
-
-    <div>
-        <h2>Test-object builders for Stripe API resources</h2>
-        <h5>November 12, 2020</h5>
-        
-<a href="https://nielsvaneck.com/tags/mockito"><kbd class="item-tag">mockito</kbd></a>
-
-<a href="https://nielsvaneck.com/tags/python"><kbd class="item-tag">python</kbd></a>
-
-<a href="https://nielsvaneck.com/tags/stripe"><kbd class="item-tag">stripe</kbd></a>
-
-<a href="https://nielsvaneck.com/tags/unit-testing"><kbd class="item-tag">unit-testing</kbd></a>
-
-
-    </div>
-
-    <div align="start" class="content"><p>Working with the Stripe API is unlike most anything else in the world of software development. Stripe&rsquo;s <a href="https://stripe.com/docs/api">documentation</a> is outstanding. Their API is intuitive and the language specific clients are easy to use. Each Stripe account comes with a test environment that makes development and integration testing effortless. The <a href="https://github.com/stripe/stripe-cli"><code>stripe</code> command line tool</a> can be used for simple API queries, setting up authentication and testing of web hooks. On top of all that, there is <a href="https://github.com/stripe/stripe-mock"><code>stripe-mock</code></a>, a local service with a near- complete implementation of the API that can be used for testing and development without requiring a network connection to the Stripe Test environment.</p>
-<p>The issue with stripe-mock–and with testing against (near) &ldquo;real&rdquo; versions of any API–is that it adds additional overhead to each test because you’ll likely have to use the API to define or tweak test data before it can be used. Once stripe-mock gets statefulness, that overhead will grow.</p>
-<p>This is fine for end-to-end testing where having tests walk a pre-designed path of API interactions that follow real-world usage is a good thing to do, but for unit testing, this amount of overhead leads to heavy tests that are hard to read and difficult to write. Life teaches us that if something is hard, we&rsquo;re less likely to do lots of it. That is bad mojo for good test coverage.</p>
-<p>In past projects, I have seen several ways of dealing with this problem, from a test-library of pre-defined hardcoded fixture data, to full-on crazy Java-style builder factory monstrosities with class names that put the average German word length to shame.</p>
-<p>I started looking at the internals of the Stripe python API client and found something very interesting. The JSON structure returned by the API is parsed into a Python <code>dict</code> and then passed to a utility method that inspects the contents and builds the appropriate Stripe object hierarchy.</p>
-<p>This sparked an idea. If I could define a Python <code>dict</code> with the right elements and invoke that Stripe utility method, I&rsquo;d be able to define and build Stripe objects on the fly. Sprinkle in a little bit of builder-pattern and I&rsquo;d have a quick, easy and readable way to build all varieties of Stripe objects needed to test my code. That in combination with Mockito (<a href="https://nve.ventures/testing-python-with-mockito/">a great mocking framework for Python</a>) would make for a very functional and pleasant way of unit testing a Stripe integration built with Python. And that&rsquo;s exactly what I did.</p>
-<p>Let&rsquo;s look at a quick example of this through an imaginary Stripe integration function that retrieves the amount of an upcoming invoice for a customer defined by an email address.</p>
-<p>We&rsquo;ll have to look up the customer in Stripe using the email address (bad practice, I know, but bear with me here) and then invoke the API endpoint that returns the upcoming invoice and grab its <code>amount_due</code> field. Note that <code>Customer.list</code> returns a collection of Customer objects, even if there&rsquo;s only one element.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> stripe
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">upcoming_amount_due</span>(customer_email):
-    customers <span style="color:#f92672">=</span> stripe<span style="color:#f92672">.</span>Customer<span style="color:#f92672">.</span>list(email<span style="color:#f92672">=</span>customer_email)
-    customer <span style="color:#f92672">=</span> customers<span style="color:#f92672">.</span>data[<span style="color:#ae81ff">0</span>]
-    upcoming_invoice <span style="color:#f92672">=</span> stripe<span style="color:#f92672">.</span>Invoice<span style="color:#f92672">.</span>upcoming(customer<span style="color:#f92672">=</span>customer<span style="color:#f92672">.</span>id)
-    <span style="color:#66d9ef">return</span> upcoming_invoice<span style="color:#f92672">.</span>amount_due
-</code></pre></div><p>Writing a test for this example would require setting up a fair amount of fixture data as well as several API calls to get the expected state, regardless of whether we would use Stripe&rsquo;s test environment or <code>stripe-mock</code>.</p>
-<p>You&rsquo;d have to create a Customer, ensure a Product structure is set up, then create a Subscription with one Subscription Item to your product and depending on the type of Subscription, you may even have to report some usage in order to trigger an upcoming invoice amount. I won&rsquo;t bore you with a code example of all that, but I hope you agree that that would be a hassle.</p>
-<p>Here&rsquo;s how that same unit test would be written using the Stripe object builders and Mockito:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> stripe
-<span style="color:#f92672">from</span> mockito <span style="color:#f92672">import</span> when
-<span style="color:#f92672">from</span> unittest <span style="color:#f92672">import</span> TestCase
-<span style="color:#f92672">from</span> my_stripe_implementation <span style="color:#f92672">import</span> upcoming_amount_due
-<span style="color:#f92672">from</span> my_stripe_builders <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StripeUnitTest</span>(TestCase):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_upcoming_amount_due</span>(self):
-        test_email <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;test@example.com&#34;</span>
-        expected_amount <span style="color:#f92672">=</span> <span style="color:#ae81ff">5000</span>
-        customer_builder <span style="color:#f92672">=</span> StripeCustomerBuilder()
-        customer <span style="color:#f92672">=</span> customer_builder<span style="color:#f92672">.</span>build()
-        customer_list <span style="color:#f92672">=</span> StripeListBuilder()<span style="color:#f92672">.</span>add(
-            customer_builder)<span style="color:#f92672">.</span>build()
-        when(stripe<span style="color:#f92672">.</span>Customer)<span style="color:#f92672">.</span>list(
-            email<span style="color:#f92672">=</span>test_email)<span style="color:#f92672">.</span>thenReturn(customer_list)
-        when(stripe<span style="color:#f92672">.</span>Invoice)<span style="color:#f92672">.</span>upcoming(
-            customer<span style="color:#f92672">=</span>customer<span style="color:#f92672">.</span>id)<span style="color:#f92672">.</span>thenReturn(
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Test-object builders for Stripe API resources</title><style>html body{font-family:raleway,sans-serif;background-color:#fff}:root{--accent: black;--border-width:  0 }</style><link rel=stylesheet href=https://nielsvaneck.com/css/main.css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Raleway"><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs-2015.min.css><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=anonymous><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/sql.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell-session.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/makefile.min.js></script><script>hljs.initHighlightingOnLoad();</script><script src=https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js></script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa crossorigin=anonymous></script><script>$(document).on('click',function(){$('.collapse').collapse('hide');})</script><meta name=generator content="Hugo 0.80.0"><script async src="https://www.googletagmanager.com/gtag/js?id=48666603"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','48666603');</script><script type=text/javascript async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></head><body><nav class="navbar navbar-default navbar-fixed-top"><div class=container><div class=navbar-header><a class="navbar-brand visible-xs" href=#>Test-object builders for Stripe API resources</a>
+<button class=navbar-toggle data-target=.navbar-collapse data-toggle=collapse>
+<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button></div><div class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href=/post/>Posts</a></li><li><a href=/about/>About</a></li></ul><ul class="nav navbar-nav navbar-right"><li class=navbar-icon><a href=https://github.com/nielsvaneck/><i class="fab fa-github"></i></a></li><li class=navbar-icon><a href=https://twitter.com/niels/><i class="fab fa-twitter"></i></a></li><li class=navbar-icon><a href=https://www.linkedin.com/in/nielsvaneck/><i class="fab fa-linkedin"></i></a></li></ul></div></div></nav><main><div><h2>Test-object builders for Stripe API resources</h2><h5>November 12, 2020</h5><a href=https://nielsvaneck.com/tags/mockito><kbd class=item-tag>mockito</kbd></a>
+<a href=https://nielsvaneck.com/tags/python><kbd class=item-tag>python</kbd></a>
+<a href=https://nielsvaneck.com/tags/stripe><kbd class=item-tag>stripe</kbd></a>
+<a href=https://nielsvaneck.com/tags/unit-testing><kbd class=item-tag>unit-testing</kbd></a></div><div align=start class=content><p>Working with the Stripe API is unlike most anything else in the world of software development. Stripe&rsquo;s <a href=https://stripe.com/docs/api>documentation</a> is outstanding. Their API is intuitive and the language specific clients are easy to use. Each Stripe account comes with a test environment that makes development and integration testing effortless. The <a href=https://github.com/stripe/stripe-cli><code>stripe</code> command line tool</a> can be used for simple API queries, setting up authentication and testing of web hooks. On top of all that, there is <a href=https://github.com/stripe/stripe-mock><code>stripe-mock</code></a>, a local service with a near- complete implementation of the API that can be used for testing and development without requiring a network connection to the Stripe Test environment.</p><p>The issue with stripe-mock–and with testing against (near) &ldquo;real&rdquo; versions of any API–is that it adds additional overhead to each test because you’ll likely have to use the API to define or tweak test data before it can be used. Once stripe-mock gets statefulness, that overhead will grow.</p><p>This is fine for end-to-end testing where having tests walk a pre-designed path of API interactions that follow real-world usage is a good thing to do, but for unit testing, this amount of overhead leads to heavy tests that are hard to read and difficult to write. Life teaches us that if something is hard, we&rsquo;re less likely to do lots of it. That is bad mojo for good test coverage.</p><p>In past projects, I have seen several ways of dealing with this problem, from a test-library of pre-defined hardcoded fixture data, to full-on crazy Java-style builder factory monstrosities with class names that put the average German word length to shame.</p><p>I started looking at the internals of the Stripe python API client and found something very interesting. The JSON structure returned by the API is parsed into a Python <code>dict</code> and then passed to a utility method that inspects the contents and builds the appropriate Stripe object hierarchy.</p><p>This sparked an idea. If I could define a Python <code>dict</code> with the right elements and invoke that Stripe utility method, I&rsquo;d be able to define and build Stripe objects on the fly. Sprinkle in a little bit of builder-pattern and I&rsquo;d have a quick, easy and readable way to build all varieties of Stripe objects needed to test my code. That in combination with Mockito (<a href=https://nve.ventures/testing-python-with-mockito/>a great mocking framework for Python</a>) would make for a very functional and pleasant way of unit testing a Stripe integration built with Python. And that&rsquo;s exactly what I did.</p><p>Let&rsquo;s look at a quick example of this through an imaginary Stripe integration function that retrieves the amount of an upcoming invoice for a customer defined by an email address.</p><p>We&rsquo;ll have to look up the customer in Stripe using the email address (bad practice, I know, but bear with me here) and then invoke the API endpoint that returns the upcoming invoice and grab its <code>amount_due</code> field. Note that <code>Customer.list</code> returns a collection of Customer objects, even if there&rsquo;s only one element.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> stripe
+<span style=color:#66d9ef>def</span> <span style=color:#a6e22e>upcoming_amount_due</span>(customer_email):
+    customers <span style=color:#f92672>=</span> stripe<span style=color:#f92672>.</span>Customer<span style=color:#f92672>.</span>list(email<span style=color:#f92672>=</span>customer_email)
+    customer <span style=color:#f92672>=</span> customers<span style=color:#f92672>.</span>data[<span style=color:#ae81ff>0</span>]
+    upcoming_invoice <span style=color:#f92672>=</span> stripe<span style=color:#f92672>.</span>Invoice<span style=color:#f92672>.</span>upcoming(customer<span style=color:#f92672>=</span>customer<span style=color:#f92672>.</span>id)
+    <span style=color:#66d9ef>return</span> upcoming_invoice<span style=color:#f92672>.</span>amount_due
+</code></pre></div><p>Writing a test for this example would require setting up a fair amount of fixture data as well as several API calls to get the expected state, regardless of whether we would use Stripe&rsquo;s test environment or <code>stripe-mock</code>.</p><p>You&rsquo;d have to create a Customer, ensure a Product structure is set up, then create a Subscription with one Subscription Item to your product and depending on the type of Subscription, you may even have to report some usage in order to trigger an upcoming invoice amount. I won&rsquo;t bore you with a code example of all that, but I hope you agree that that would be a hassle.</p><p>Here&rsquo;s how that same unit test would be written using the Stripe object builders and Mockito:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> stripe
+<span style=color:#f92672>from</span> mockito <span style=color:#f92672>import</span> when
+<span style=color:#f92672>from</span> unittest <span style=color:#f92672>import</span> TestCase
+<span style=color:#f92672>from</span> my_stripe_implementation <span style=color:#f92672>import</span> upcoming_amount_due
+<span style=color:#f92672>from</span> my_stripe_builders <span style=color:#f92672>import</span> <span style=color:#f92672>*</span>
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>StripeUnitTest</span>(TestCase):
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>test_upcoming_amount_due</span>(self):
+        test_email <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;test@example.com&#34;</span>
+        expected_amount <span style=color:#f92672>=</span> <span style=color:#ae81ff>5000</span>
+        customer_builder <span style=color:#f92672>=</span> StripeCustomerBuilder()
+        customer <span style=color:#f92672>=</span> customer_builder<span style=color:#f92672>.</span>build()
+        customer_list <span style=color:#f92672>=</span> StripeListBuilder()<span style=color:#f92672>.</span>add(
+            customer_builder)<span style=color:#f92672>.</span>build()
+        when(stripe<span style=color:#f92672>.</span>Customer)<span style=color:#f92672>.</span>list(
+            email<span style=color:#f92672>=</span>test_email)<span style=color:#f92672>.</span>thenReturn(customer_list)
+        when(stripe<span style=color:#f92672>.</span>Invoice)<span style=color:#f92672>.</span>upcoming(
+            customer<span style=color:#f92672>=</span>customer<span style=color:#f92672>.</span>id)<span style=color:#f92672>.</span>thenReturn(
                 StripeInvoiceBuilder()
-                <span style="color:#f92672">.</span>amount_due(expected_amount)
-                <span style="color:#f92672">.</span>build())
+                <span style=color:#f92672>.</span>amount_due(expected_amount)
+                <span style=color:#f92672>.</span>build())
 
-        self<span style="color:#f92672">.</span>assertEqual(expected_amount, upcoming_amount_due(test_email))
-</code></pre></div><p>Using a combination of pre-defined fixture data and overrides where needed, the object builders allow for quickly setting up test data. The code under test invokes the Stripe API client, but through the use of Mockito, it will receive the test objects.</p>
-<p>Yes, for this test, we could have entirely mocked out the objects with Mockito, but when the code under tests uses more of the fields, or when it loops through list of API results, it quickly becomes easier to just build the &ldquo;real thing&rdquo;.</p>
-<p>Now that you have an idea of how these builders are used, let&rsquo;s take a look under the covers. At the heart of it all lies the base class, <code>StripeObjectBuilder</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> random
-<span style="color:#f92672">import</span> string
-<span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> time
-<span style="color:#f92672">import</span> stripe
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StripeObjectBuilder</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_build_data</span>(self):
-        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_data
-    <span style="color:#66d9ef">def</span> __init__(self):
-        self<span style="color:#f92672">.</span>_data <span style="color:#f92672">=</span> None
-        self<span style="color:#f92672">.</span>_id_str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join(random<span style="color:#f92672">.</span>choice(
-            string<span style="color:#f92672">.</span>ascii_letters <span style="color:#f92672">+</span> string<span style="color:#f92672">.</span>digits) <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">16</span>))
-        self<span style="color:#f92672">.</span>_now_epoch_secs <span style="color:#f92672">=</span> int(time())
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_id</span>(self, prefix: str):
-        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;{}_{}&#34;</span><span style="color:#f92672">.</span>format(prefix<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;_&#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>), self<span style="color:#f92672">.</span>_id_str)
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build</span>(self):
-        <span style="color:#66d9ef">return</span> stripe<span style="color:#f92672">.</span>util<span style="color:#f92672">.</span>convert_to_stripe_object(self<span style="color:#f92672">.</span>_build_data())
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">deleted</span>(self):
-        self<span style="color:#f92672">.</span>_data <span style="color:#f92672">=</span> dict(
-            id<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>_data[<span style="color:#e6db74">&#34;id&#34;</span>],
-            object<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>_data[<span style="color:#e6db74">&#34;object&#34;</span>],
-            deleted<span style="color:#f92672">=</span>True
+        self<span style=color:#f92672>.</span>assertEqual(expected_amount, upcoming_amount_due(test_email))
+</code></pre></div><p>Using a combination of pre-defined fixture data and overrides where needed, the object builders allow for quickly setting up test data. The code under test invokes the Stripe API client, but through the use of Mockito, it will receive the test objects.</p><p>Yes, for this test, we could have entirely mocked out the objects with Mockito, but when the code under tests uses more of the fields, or when it loops through list of API results, it quickly becomes easier to just build the &ldquo;real thing&rdquo;.</p><p>Now that you have an idea of how these builders are used, let&rsquo;s take a look under the covers. At the heart of it all lies the base class, <code>StripeObjectBuilder</code>.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> random
+<span style=color:#f92672>import</span> string
+<span style=color:#f92672>from</span> time <span style=color:#f92672>import</span> time
+<span style=color:#f92672>import</span> stripe
+<span style=color:#66d9ef>class</span> <span style=color:#a6e22e>StripeObjectBuilder</span>:
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_build_data</span>(self):
+        <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>_data
+    <span style=color:#66d9ef>def</span> __init__(self):
+        self<span style=color:#f92672>.</span>_data <span style=color:#f92672>=</span> None
+        self<span style=color:#f92672>.</span>_id_str <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;&#39;</span><span style=color:#f92672>.</span>join(random<span style=color:#f92672>.</span>choice(
+            string<span style=color:#f92672>.</span>ascii_letters <span style=color:#f92672>+</span> string<span style=color:#f92672>.</span>digits) <span style=color:#66d9ef>for</span> _ <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>16</span>))
+        self<span style=color:#f92672>.</span>_now_epoch_secs <span style=color:#f92672>=</span> int(time())
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_id</span>(self, prefix: str):
+        <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;{}_{}&#34;</span><span style=color:#f92672>.</span>format(prefix<span style=color:#f92672>.</span>replace(<span style=color:#e6db74>&#34;_&#34;</span>, <span style=color:#e6db74>&#34;&#34;</span>), self<span style=color:#f92672>.</span>_id_str)
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>build</span>(self):
+        <span style=color:#66d9ef>return</span> stripe<span style=color:#f92672>.</span>util<span style=color:#f92672>.</span>convert_to_stripe_object(self<span style=color:#f92672>.</span>_build_data())
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>deleted</span>(self):
+        self<span style=color:#f92672>.</span>_data <span style=color:#f92672>=</span> dict(
+            id<span style=color:#f92672>=</span>self<span style=color:#f92672>.</span>_data[<span style=color:#e6db74>&#34;id&#34;</span>],
+            object<span style=color:#f92672>=</span>self<span style=color:#f92672>.</span>_data[<span style=color:#e6db74>&#34;object&#34;</span>],
+            deleted<span style=color:#f92672>=</span>True
         )
-        <span style="color:#66d9ef">return</span> self
-    <span style="color:#66d9ef">def</span> __getattr__(self, field_name):
-        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_data_field</span>(value):
-            self<span style="color:#f92672">.</span>_data[field_name] <span style="color:#f92672">=</span> value
-            <span style="color:#66d9ef">return</span> self
-        <span style="color:#66d9ef">return</span> set_data_field
-</code></pre></div><p>The object structure will be held in the <code>_data</code> field. <code>_build_data()</code> finalizes building of the object structure (reason for this will become apparent when we look at the list object below) which is then passed to <code>stripe.util.convert_to_stripe_object()</code> by <code>build()</code>.</p>
-<p>Builder classes for specific Stripe objects will extend <code>StripeObjectBuilder</code> and define the object structure by setting the <code>_data</code> field in their constructor.</p>
-<p><code>__getattr__</code> allows overwriting any field in the <code>_data</code> dict and because <code>self</code> is returned, these methods can be chained for concise object construction syntax, as illustrated with <code>.amount_due(expected_amount)</code> in the example above.</p>
-<p>Many Stripe objects like Customer, Subscription, etcetera have a metadata map for arbitrary key/value storage. We can build convenient support for that with the following extension:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StripeObjectWithMetadataBuilder</span>(StripeObjectBuilder):
-    <span style="color:#66d9ef">def</span> __init__(self):
-        self<span style="color:#f92672">.</span>_data <span style="color:#f92672">=</span> None
-        super()<span style="color:#f92672">.</span>__init__()
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_metadata</span>(self, key: str, value):
-        <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;metadata&#34;</span> <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>_data:
-            self<span style="color:#f92672">.</span>_data[<span style="color:#e6db74">&#34;metadata&#34;</span>] <span style="color:#f92672">=</span> dict()
-        self<span style="color:#f92672">.</span>_data[<span style="color:#e6db74">&#34;metadata&#34;</span>][key] <span style="color:#f92672">=</span> value
-        <span style="color:#66d9ef">return</span> self
-</code></pre></div><p>Before we get to the Customer builder, we need to get one more bit of infrastructure out of the way; Lists. Enter the <code>StripeListBuilder</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StripeListBuilder</span>(StripeObjectBuilder):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_build_data</span>(self):
-        self<span style="color:#f92672">.</span>_data[<span style="color:#e6db74">&#34;data&#34;</span>] <span style="color:#f92672">=</span> [item<span style="color:#f92672">.</span>_build_data() <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>_list_items]
-        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_data
-    <span style="color:#66d9ef">def</span> __init__(self):
-        super()<span style="color:#f92672">.</span>__init__()
-        self<span style="color:#f92672">.</span>_list_items <span style="color:#f92672">=</span> []
-        self<span style="color:#f92672">.</span>_data <span style="color:#f92672">=</span> dict(
-            object<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;list&#34;</span>,
-            data<span style="color:#f92672">=</span>None,
-            has_more<span style="color:#f92672">=</span>False,
-            total_count<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>,
-            url<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>,)
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add</span>(self, builder: StripeObjectBuilder):
-        self<span style="color:#f92672">.</span>_list_items<span style="color:#f92672">.</span>append(builder)
-        self<span style="color:#f92672">.</span>_data[<span style="color:#e6db74">&#34;total_count&#34;</span>] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-        <span style="color:#66d9ef">return</span> self
-</code></pre></div><p>Items can be added to the list builder by passing their builder to the <code>add()</code> method. Note again that self is returned for method chaining. <code>_build_data()</code> loops through the <code>_list_items</code> and builds the <code>_data</code> structure.</p>
-<p>Using this, we can now look at the <code>StripeCustomerBuilder</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StripeCustomerBuilder</span>(StripeObjectWithMetadataBuilder):
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_build_data</span>(self):
-        self<span style="color:#f92672">.</span>_data[<span style="color:#e6db74">&#34;sources&#34;</span>] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_sources<span style="color:#f92672">.</span>_build_data()
-        self<span style="color:#f92672">.</span>_data[<span style="color:#e6db74">&#34;subscriptions&#34;</span>] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_subscriptions<span style="color:#f92672">.</span>_build_data()
-        self<span style="color:#f92672">.</span>_data[<span style="color:#e6db74">&#34;tax_ids&#34;</span>] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_tax_ids<span style="color:#f92672">.</span>_build_data()
-        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_data
-    <span style="color:#66d9ef">def</span> __init__(self):
-        super()<span style="color:#f92672">.</span>__init__()
-        self<span style="color:#f92672">.</span>_sources <span style="color:#f92672">=</span> StripeListBuilder()
-        self<span style="color:#f92672">.</span>_subscriptions <span style="color:#f92672">=</span> StripeListBuilder()
-        self<span style="color:#f92672">.</span>_tax_ids <span style="color:#f92672">=</span> StripeListBuilder()
-        self<span style="color:#f92672">.</span>_data <span style="color:#f92672">=</span> dict(
-            id<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>_id(<span style="color:#e6db74">&#34;cus&#34;</span>),
-            object<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;customer&#34;</span>,
-            address<span style="color:#f92672">=</span>dict(
-                line1<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;123 main st&#34;</span>,
-                line2<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;apt 4&#34;</span>,
-                city<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;San Francisco&#34;</span>,
-                country<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;US&#34;</span>,
-                postal_code<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;94102&#34;</span>,
-                state<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;CA&#34;</span>
+        <span style=color:#66d9ef>return</span> self
+    <span style=color:#66d9ef>def</span> __getattr__(self, field_name):
+        <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>set_data_field</span>(value):
+            self<span style=color:#f92672>.</span>_data[field_name] <span style=color:#f92672>=</span> value
+            <span style=color:#66d9ef>return</span> self
+        <span style=color:#66d9ef>return</span> set_data_field
+</code></pre></div><p>The object structure will be held in the <code>_data</code> field. <code>_build_data()</code> finalizes building of the object structure (reason for this will become apparent when we look at the list object below) which is then passed to <code>stripe.util.convert_to_stripe_object()</code> by <code>build()</code>.</p><p>Builder classes for specific Stripe objects will extend <code>StripeObjectBuilder</code> and define the object structure by setting the <code>_data</code> field in their constructor.</p><p><code>__getattr__</code> allows overwriting any field in the <code>_data</code> dict and because <code>self</code> is returned, these methods can be chained for concise object construction syntax, as illustrated with <code>.amount_due(expected_amount)</code> in the example above.</p><p>Many Stripe objects like Customer, Subscription, etcetera have a metadata map for arbitrary key/value storage. We can build convenient support for that with the following extension:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>StripeObjectWithMetadataBuilder</span>(StripeObjectBuilder):
+    <span style=color:#66d9ef>def</span> __init__(self):
+        self<span style=color:#f92672>.</span>_data <span style=color:#f92672>=</span> None
+        super()<span style=color:#f92672>.</span>__init__()
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>set_metadata</span>(self, key: str, value):
+        <span style=color:#66d9ef>if</span> <span style=color:#e6db74>&#34;metadata&#34;</span> <span style=color:#f92672>not</span> <span style=color:#f92672>in</span> self<span style=color:#f92672>.</span>_data:
+            self<span style=color:#f92672>.</span>_data[<span style=color:#e6db74>&#34;metadata&#34;</span>] <span style=color:#f92672>=</span> dict()
+        self<span style=color:#f92672>.</span>_data[<span style=color:#e6db74>&#34;metadata&#34;</span>][key] <span style=color:#f92672>=</span> value
+        <span style=color:#66d9ef>return</span> self
+</code></pre></div><p>Before we get to the Customer builder, we need to get one more bit of infrastructure out of the way; Lists. Enter the <code>StripeListBuilder</code>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>StripeListBuilder</span>(StripeObjectBuilder):
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_build_data</span>(self):
+        self<span style=color:#f92672>.</span>_data[<span style=color:#e6db74>&#34;data&#34;</span>] <span style=color:#f92672>=</span> [item<span style=color:#f92672>.</span>_build_data() <span style=color:#66d9ef>for</span> item <span style=color:#f92672>in</span> self<span style=color:#f92672>.</span>_list_items]
+        <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>_data
+    <span style=color:#66d9ef>def</span> __init__(self):
+        super()<span style=color:#f92672>.</span>__init__()
+        self<span style=color:#f92672>.</span>_list_items <span style=color:#f92672>=</span> []
+        self<span style=color:#f92672>.</span>_data <span style=color:#f92672>=</span> dict(
+            object<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;list&#34;</span>,
+            data<span style=color:#f92672>=</span>None,
+            has_more<span style=color:#f92672>=</span>False,
+            total_count<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>,
+            url<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;</span>,)
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>add</span>(self, builder: StripeObjectBuilder):
+        self<span style=color:#f92672>.</span>_list_items<span style=color:#f92672>.</span>append(builder)
+        self<span style=color:#f92672>.</span>_data[<span style=color:#e6db74>&#34;total_count&#34;</span>] <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+        <span style=color:#66d9ef>return</span> self
+</code></pre></div><p>Items can be added to the list builder by passing their builder to the <code>add()</code> method. Note again that self is returned for method chaining. <code>_build_data()</code> loops through the <code>_list_items</code> and builds the <code>_data</code> structure.</p><p>Using this, we can now look at the <code>StripeCustomerBuilder</code>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>StripeCustomerBuilder</span>(StripeObjectWithMetadataBuilder):
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_build_data</span>(self):
+        self<span style=color:#f92672>.</span>_data[<span style=color:#e6db74>&#34;sources&#34;</span>] <span style=color:#f92672>=</span> self<span style=color:#f92672>.</span>_sources<span style=color:#f92672>.</span>_build_data()
+        self<span style=color:#f92672>.</span>_data[<span style=color:#e6db74>&#34;subscriptions&#34;</span>] <span style=color:#f92672>=</span> self<span style=color:#f92672>.</span>_subscriptions<span style=color:#f92672>.</span>_build_data()
+        self<span style=color:#f92672>.</span>_data[<span style=color:#e6db74>&#34;tax_ids&#34;</span>] <span style=color:#f92672>=</span> self<span style=color:#f92672>.</span>_tax_ids<span style=color:#f92672>.</span>_build_data()
+        <span style=color:#66d9ef>return</span> self<span style=color:#f92672>.</span>_data
+    <span style=color:#66d9ef>def</span> __init__(self):
+        super()<span style=color:#f92672>.</span>__init__()
+        self<span style=color:#f92672>.</span>_sources <span style=color:#f92672>=</span> StripeListBuilder()
+        self<span style=color:#f92672>.</span>_subscriptions <span style=color:#f92672>=</span> StripeListBuilder()
+        self<span style=color:#f92672>.</span>_tax_ids <span style=color:#f92672>=</span> StripeListBuilder()
+        self<span style=color:#f92672>.</span>_data <span style=color:#f92672>=</span> dict(
+            id<span style=color:#f92672>=</span>self<span style=color:#f92672>.</span>_id(<span style=color:#e6db74>&#34;cus&#34;</span>),
+            object<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;customer&#34;</span>,
+            address<span style=color:#f92672>=</span>dict(
+                line1<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;123 main st&#34;</span>,
+                line2<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;apt 4&#34;</span>,
+                city<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;San Francisco&#34;</span>,
+                country<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;US&#34;</span>,
+                postal_code<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;94102&#34;</span>,
+                state<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;CA&#34;</span>
             ),
-            currency<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;usd&#34;</span>,
-            created<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>_now_epoch_secs,
-            default_source<span style="color:#f92672">=</span>None,
-            description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;unit test customer 123 &#34;</span>,
-            delinquent<span style="color:#f92672">=</span>False,
-            email<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;test_customer@company.com&#34;</span>,
-            invoice_prefix<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;MYINVPREFIX&#34;</span>,
-            name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Test Customer&#34;</span>,
-            phone<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;41512367890&#34;</span>,
-            preferred_locales<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;en&#34;</span>],
-            sources<span style="color:#f92672">=</span>dict(),
-            subscriptions<span style="color:#f92672">=</span>dict(),
-            tax_exempt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;exempt&#34;</span>,
-            tax_ids<span style="color:#f92672">=</span>dict(),
+            currency<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;usd&#34;</span>,
+            created<span style=color:#f92672>=</span>self<span style=color:#f92672>.</span>_now_epoch_secs,
+            default_source<span style=color:#f92672>=</span>None,
+            description<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;unit test customer 123 &#34;</span>,
+            delinquent<span style=color:#f92672>=</span>False,
+            email<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;test_customer@company.com&#34;</span>,
+            invoice_prefix<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;MYINVPREFIX&#34;</span>,
+            name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Test Customer&#34;</span>,
+            phone<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;41512367890&#34;</span>,
+            preferred_locales<span style=color:#f92672>=</span>[<span style=color:#e6db74>&#34;en&#34;</span>],
+            sources<span style=color:#f92672>=</span>dict(),
+            subscriptions<span style=color:#f92672>=</span>dict(),
+            tax_exempt<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;exempt&#34;</span>,
+            tax_ids<span style=color:#f92672>=</span>dict(),
         )
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_subscription_builder</span>(
+    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>add_subscription_builder</span>(
             self, subscription_builder: StripeSubscriptionBuilder):
-        subscription_builder<span style="color:#f92672">.</span>customer(self<span style="color:#f92672">.</span>_data[<span style="color:#e6db74">&#34;id&#34;</span>])
-        self<span style="color:#f92672">.</span>_subscriptions<span style="color:#f92672">.</span>add(subscription_builder)
-        <span style="color:#66d9ef">return</span> self
-</code></pre></div><p>The constructor defines a basic set of fixture data. Embedded objects, like subscriptions in the subscriptions list can be added using add_&hellip; methods (for brevity, those for <code>sources</code> and <code>tax_ids</code> are omitted).</p>
-<p>The fixture <code>_data</code> structure is based on the JSON hierarchy in the <a href="https://stripe.com/docs/api/customers/object#customer_object">Customer API documentation</a>. Any extra fields can be added as needed, depending on your implementation.</p>
-<p>Using the Customer example above, it&rsquo;s easy to write builders for other Stripe objects. I built them as my integration required new objects and found myself re-using them over and over again.</p>
-<p>To round things out, here is another example of a complicated set of connected Stripe objects, defined in a few lines using Stripe Object Builders:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">customer <span style="color:#f92672">=</span> (
+        subscription_builder<span style=color:#f92672>.</span>customer(self<span style=color:#f92672>.</span>_data[<span style=color:#e6db74>&#34;id&#34;</span>])
+        self<span style=color:#f92672>.</span>_subscriptions<span style=color:#f92672>.</span>add(subscription_builder)
+        <span style=color:#66d9ef>return</span> self
+</code></pre></div><p>The constructor defines a basic set of fixture data. Embedded objects, like subscriptions in the subscriptions list can be added using add_&mldr; methods (for brevity, those for <code>sources</code> and <code>tax_ids</code> are omitted).</p><p>The fixture <code>_data</code> structure is based on the JSON hierarchy in the <a href=https://stripe.com/docs/api/customers/object#customer_object>Customer API documentation</a>. Any extra fields can be added as needed, depending on your implementation.</p><p>Using the Customer example above, it&rsquo;s easy to write builders for other Stripe objects. I built them as my integration required new objects and found myself re-using them over and over again.</p><p>To round things out, here is another example of a complicated set of connected Stripe objects, defined in a few lines using Stripe Object Builders:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>customer <span style=color:#f92672>=</span> (
     StripeCustomerBuilder()
-        <span style="color:#f92672">.</span>name(<span style="color:#e6db74">&#34;John Doe&#34;</span>)
-        <span style="color:#f92672">.</span>delinquent(True)
-        <span style="color:#f92672">.</span>email(<span style="color:#e6db74">&#34;jdoe@company.com&#34;</span>)
-        <span style="color:#f92672">.</span>add_subscription_builder(
+        <span style=color:#f92672>.</span>name(<span style=color:#e6db74>&#34;John Doe&#34;</span>)
+        <span style=color:#f92672>.</span>delinquent(True)
+        <span style=color:#f92672>.</span>email(<span style=color:#e6db74>&#34;jdoe@company.com&#34;</span>)
+        <span style=color:#f92672>.</span>add_subscription_builder(
             StripeSubscriptionBuilder()
-                <span style="color:#f92672">.</span>add_item_builder(StripeItemBuilder(
+                <span style=color:#f92672>.</span>add_item_builder(StripeItemBuilder(
                     StripePlanBuilder()
-                        <span style="color:#f92672">.</span>nickname(<span style="color:#e6db74">&#34;3dollarMontly&#34;</span>)
-                        <span style="color:#f92672">.</span>amount(<span style="color:#ae81ff">300</span>)))
-                <span style="color:#f92672">.</span>add_item_builder(StripeItemBuilder(
+                        <span style=color:#f92672>.</span>nickname(<span style=color:#e6db74>&#34;3dollarMontly&#34;</span>)
+                        <span style=color:#f92672>.</span>amount(<span style=color:#ae81ff>300</span>)))
+                <span style=color:#f92672>.</span>add_item_builder(StripeItemBuilder(
                     StripePlanBuilder()
-                        <span style="color:#f92672">.</span>nickname(<span style="color:#e6db74">&#34;6dollarMonthly&#34;</span>)
-                        <span style="color:#f92672">.</span>amount(<span style="color:#ae81ff">600</span>)))
+                        <span style=color:#f92672>.</span>nickname(<span style=color:#e6db74>&#34;6dollarMonthly&#34;</span>)
+                        <span style=color:#f92672>.</span>amount(<span style=color:#ae81ff>600</span>)))
         )
-    )<span style="color:#f92672">.</span>build()
-</code></pre></div><p>In 17 lines of code, we build a Customer called John Doe, who can be emailed at <a href="mailto:jdoe@company.com">jdoe@company.com</a> about his lack of payment for a Subscription to the 3 and 6 dollars a month plan.</p>
-<p>Using object builders like these, I&rsquo;ve written lots of self-contained, readable unit tests for my Stripe integration code. I&rsquo;m not sure if the world needs it, but I have been toying with the idea of creating an open source library that takes the ideas outlined above, combined with Stripe&rsquo;s OpenAPI fixture data, to provide an auto-generated full featured set of object builders for use in any Stripe integration.</p>
-<p>As always, I hope this was useful to you. If it is, or if you have suggestions, be sure to drop me a line.</p>
-<p>-<a href="https://twitter.com/niels">@niels</a></p>
-</div>
-
-    
-    
-    
-        <h4 class="page-header">Related</h4>
-         <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/post/2020/2020-11-10-testing-python-with-mockito/">Testing Python with Mockito</a></h4>
-    <h5>November 10, 2020</h5>
-    
-<a href="https://nielsvaneck.com/tags/mockito"><kbd class="item-tag">mockito</kbd></a>
-
-<a href="https://nielsvaneck.com/tags/python"><kbd class="item-tag">python</kbd></a>
-
-<a href="https://nielsvaneck.com/tags/unit-testing"><kbd class="item-tag">unit-testing</kbd></a>
-
-
-
-</div>
- 
-    
-
-    
-    
-
-</main>
-
-        <footer>
-            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a>.</p>
-        </footer>
-
-        
-
-        
-    </body>
-
-</html>
-
+    )<span style=color:#f92672>.</span>build()
+</code></pre></div><p>In 17 lines of code, we build a Customer called John Doe, who can be emailed at <a href=mailto:jdoe@company.com>jdoe@company.com</a> about his lack of payment for a Subscription to the 3 and 6 dollars a month plan.</p><p>Using object builders like these, I&rsquo;ve written lots of self-contained, readable unit tests for my Stripe integration code. I&rsquo;m not sure if the world needs it, but I have been toying with the idea of creating an open source library that takes the ideas outlined above, combined with Stripe&rsquo;s OpenAPI fixture data, to provide an auto-generated full featured set of object builders for use in any Stripe integration.</p><p>As always, I hope this was useful to you. If it is, or if you have suggestions, be sure to drop me a line.</p><p>-<a href=https://twitter.com/niels>@niels</a></p></div><h4 class=page-header>Related</h4><div class=item><h4><a href=/post/2020/2020-11-10-testing-python-with-mockito/>Testing Python with Mockito</a></h4><h5>November 10, 2020</h5><a href=https://nielsvaneck.com/tags/mockito><kbd class=item-tag>mockito</kbd></a>
+<a href=https://nielsvaneck.com/tags/python><kbd class=item-tag>python</kbd></a>
+<a href=https://nielsvaneck.com/tags/unit-testing><kbd class=item-tag>unit-testing</kbd></a></div></main><footer><p class="copyright text-muted">© All rights reserved. Powered by <a href=https://gohugo.io>Hugo</a> and <a href=https://github.com/calintat/minimal>Minimal</a>.</p></footer></body></html>

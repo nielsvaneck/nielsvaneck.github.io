@@ -15,8 +15,8 @@
     }
 
     :root {
-        --accent: red;
-        --border-width:  5px ;
+        --accent: black;
+        --border-width:  0 ;
     }
 
 </style>
@@ -31,7 +31,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs-2015.min.css"> 
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
@@ -46,13 +46,15 @@
     
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/sql.min.js"></script>
     
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/shell-session.min.js"></script>
     
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
     
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
     
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/makefile.min.js"></script>
     
     <script>hljs.initHighlightingOnLoad();</script>
 
@@ -98,11 +100,9 @@
                     
                         <ul class="nav navbar-nav">
                             
-                                <li><a href="/">Home</a></li>
+                                <li><a href="/post/">Posts</a></li>
                             
                                 <li><a href="/about/">About</a></li>
-                            
-                                <li><a href="/post/">Posts</a></li>
                             
                         </ul>
                     
@@ -190,8 +190,8 @@ Let’s break the format string into its parts:
 <p>A nice side effect of <code>## help text</code> comments on command targets is that it visually separates them from their &ldquo;automatic&rdquo; siblings when reading through the Makefile.</p>
 <h2 id="makefile-target-re-use">Makefile target re-use</h2>
 <p>When using Makefiles as a command interface for your repository, it will likely contain targets that can be shared with other repositories in your organization or other projects you work on. The <code>help</code> target presented above is a prime example. Most Makefiles are self-contained. Their targets are specific to the repository and project they exist in. But Makefiles can <a href="https://www.gnu.org/software/make/manual/html_node/Include.html">include</a> other Makefiles, which offers a way to bring in common targets.</p>
-<pre><code>-include common.mk
-</code></pre><p>Makefile includes can live in a different repository, a git submodule, a symlinked directory, etc. The possibilities are endless. The Makefile could even contain bootstrap logic to fetch the included files. If that is the case, ensure the include statements are prefixed with &ldquo;<code>-</code>&rdquo;. This will ignore import errors and allow targets in the Makefile to run without the include files being present, thus preventing a bootstrap / include catch-22 situation.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#960050;background-color:#1e0010">-include</span> <span style="color:#960050;background-color:#1e0010">common.mk</span>
+</code></pre></div><p>Makefile includes can live in a different repository, a git submodule, a symlinked directory, etc. The possibilities are endless. The Makefile could even contain bootstrap logic to fetch the included files. If that is the case, ensure the include statements are prefixed with &ldquo;<code>-</code>&rdquo;. This will ignore import errors and allow targets in the Makefile to run without the include files being present, thus preventing a bootstrap / include catch-22 situation.</p>
 <p>Over the past year, I have created Makefiles for various repositories based on the practices outlined above. Shared logic is brought in through git submodules and using make help, command targets are discoverable and documented. As an added bonus, maintaining and improving this toolkit is a great way to &ldquo;get in the zone&rdquo;. I&rsquo;ll be using this wherever appropriate and I hope you will find it useful too. If so, drop me a line!</p>
 <p>-<a href="https://twitter.com/niels">@niels</a></p>
 <p>btw, here are some resources for writing Makefiles I found helpful:</p>
@@ -201,7 +201,7 @@ Let’s break the format string into its parts:
 <li><a href="https://victoria.dev/blog/how-to-create-a-self-documenting-makefile/">How to create a self-documenting Makefile</a>, by <a href="https://victoria.dev/">Victoria Drake</a>. Make help.</li>
 <li><a href="https://github.com/mrtazz/checkmake">Checkmake</a>, a Makefile lint tool, conveniently executable from a <a href="https://github.com/cytopia/docker-checkmake">Docker image</a>, which enables; <code>make lint-make</code>, a self-check for your Makefile 😜</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Makefile" data-lang="Makefile"><span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> lint-make
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-makefile" data-lang="makefile"><span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> lint-make
 
 <span style="color:#a6e22e">lint-make</span><span style="color:#f92672">:</span> <span style="color:#75715e">## Run Checkmake on Makefile (requires docker)
 </span><span style="color:#75715e"></span>	@docker run --rm -v <span style="color:#e6db74">&#34;</span>$$<span style="color:#e6db74">(pwd):/data&#34;</span> cytopia/checkmake Makefile

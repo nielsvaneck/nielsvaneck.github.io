@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://nielsvaneck.com/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nielsvaneck.com/post/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nielsvaneck.com/post/2020/2020-11-21-make-as-a-command-interface-to-your-repository/</loc>
+    <lastmod>2020-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nielsvaneck.com/post/2020/2020-11-14-cover-story/</loc>
+    <lastmod>2020-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nielsvaneck.com/tags/mockito/</loc>
+    <lastmod>2020-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nielsvaneck.com/tags/python/</loc>
+    <lastmod>2020-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nielsvaneck.com/tags/stripe/</loc>
+    <lastmod>2020-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nielsvaneck.com/tags/</loc>
+    <lastmod>2020-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nielsvaneck.com/post/2020/2020-11-12-test-object-builders-for-stripe-api-resources/</loc>
+    <lastmod>2020-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nielsvaneck.com/tags/unit-testing/</loc>
+    <lastmod>2020-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nielsvaneck.com/post/2020/2020-11-10-gcloud-dataproc-image-upgrades-zeppelin-notebooks/</loc>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nielsvaneck.com/post/2020/2020-11-10-testing-python-with-mockito/</loc>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nielsvaneck.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://nielsvaneck.com/categories/</loc>
+  </url>
+  
+</urlset>

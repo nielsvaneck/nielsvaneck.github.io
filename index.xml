@@ -327,35 +327,4 @@ verifyStubbedInvocationsAreUsed()
 &lt;p>Mockito offers a whole host of argument &lt;a href="https://mockito-python.readthedocs.io/en/latest/the-matchers.html">Matchers&lt;/a> that can be used to describe parameter expectations and you can use an argument Captor to inspect parameters even further. Mocked methods can return fixed values, raise errors and even execute lambdas if dynamic results are needed in your test.&lt;/p>
 &lt;p>The whole thing is &lt;a href="https://mockito-python.readthedocs.io/en/latest/">very well documented&lt;/a> and a joy to use. I&amp;rsquo;ve written a slew of test code with Mockito over the course of this year. Doing so has helped me find a bunch of silly bugs and most of all has helped me build confidence in my code-even the trivial parts!&lt;/p>
 &lt;p>Since discovering &lt;a href="https://mockito-python.readthedocs.io/en/latest/">Mockito&lt;/a> for Python, my proverbial coal mine is packed to the brim with canaries and I love it! I hope it&amp;rsquo;s useful to you too. If that is the case, or if you have suggestions, drop me line. &lt;a href="https://mockito-python.readthedocs.io/en/latest/">Enjoy&lt;/a>!&lt;/p>
-&lt;p>-&lt;a href="https://twitter.com/niels">@niels&lt;/a>&lt;/p></content:encoded></item><item><title>About</title><link>https://nielsvaneck.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nielsvaneck.com/about/</guid><description>Hi! I&amp;rsquo;m Niels, Fresh dad, YouTube polymath, man of owls, sand exciter, enjoyer of domestic tinkering and other adventures. Welcome to my personal corner of the Internet!
-Here are some things I&amp;rsquo;ve written about:
-blog dataproc devops gcloud gcp github hugo make mockito opinion python stripe unit-testing zeppelin</description><content:encoded>&lt;p>Hi! I&amp;rsquo;m Niels, Fresh dad, YouTube polymath, &lt;a href="https://twitter.com/niels">man of owls&lt;/a>, &lt;a href="https://github.com/nielsvaneck">sand exciter&lt;/a>, enjoyer of domestic tinkering and other adventures. Welcome to my personal corner of the Internet!&lt;/p>
-&lt;p>Here are some things I&amp;rsquo;ve written about:&lt;/p>
-&lt;a href="https://nielsvaneck.com/tags/blog/" class="item-tag"
-style="font-size:1rem">&lt;kbd>blog&lt;/kbd>&lt;/a>
-&lt;a href="https://nielsvaneck.com/tags/dataproc/" class="item-tag"
-style="font-size:1rem">&lt;kbd>dataproc&lt;/kbd>&lt;/a>
-&lt;a href="https://nielsvaneck.com/tags/devops/" class="item-tag"
-style="font-size:1rem">&lt;kbd>devops&lt;/kbd>&lt;/a>
-&lt;a href="https://nielsvaneck.com/tags/gcloud/" class="item-tag"
-style="font-size:1rem">&lt;kbd>gcloud&lt;/kbd>&lt;/a>
-&lt;a href="https://nielsvaneck.com/tags/gcp/" class="item-tag"
-style="font-size:1rem">&lt;kbd>gcp&lt;/kbd>&lt;/a>
-&lt;a href="https://nielsvaneck.com/tags/github/" class="item-tag"
-style="font-size:1rem">&lt;kbd>github&lt;/kbd>&lt;/a>
-&lt;a href="https://nielsvaneck.com/tags/hugo/" class="item-tag"
-style="font-size:1rem">&lt;kbd>hugo&lt;/kbd>&lt;/a>
-&lt;a href="https://nielsvaneck.com/tags/make/" class="item-tag"
-style="font-size:1rem">&lt;kbd>make&lt;/kbd>&lt;/a>
-&lt;a href="https://nielsvaneck.com/tags/mockito/" class="item-tag"
-style="font-size:2rem">&lt;kbd>mockito&lt;/kbd>&lt;/a>
-&lt;a href="https://nielsvaneck.com/tags/opinion/" class="item-tag"
-style="font-size:1rem">&lt;kbd>opinion&lt;/kbd>&lt;/a>
-&lt;a href="https://nielsvaneck.com/tags/python/" class="item-tag"
-style="font-size:2rem">&lt;kbd>python&lt;/kbd>&lt;/a>
-&lt;a href="https://nielsvaneck.com/tags/stripe/" class="item-tag"
-style="font-size:1rem">&lt;kbd>stripe&lt;/kbd>&lt;/a>
-&lt;a href="https://nielsvaneck.com/tags/unit-testing/" class="item-tag"
-style="font-size:2rem">&lt;kbd>unit-testing&lt;/kbd>&lt;/a>
-&lt;a href="https://nielsvaneck.com/tags/zeppelin/" class="item-tag"
-style="font-size:1rem">&lt;kbd>zeppelin&lt;/kbd>&lt;/a></content:encoded></item></channel></rss>
+&lt;p>-&lt;a href="https://twitter.com/niels">@niels&lt;/a>&lt;/p></content:encoded></item></channel></rss>

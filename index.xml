@@ -1,4 +1,119 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>niels van eck</title><link>https://nielsvaneck.com/</link><description>Recent content on niels van eck</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 09 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nielsvaneck.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Bye, Wordpress!</title><link>https://nielsvaneck.com/post/2021-01-09-bye-wordpress/</link><pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate><guid>https://nielsvaneck.com/post/2021-01-09-bye-wordpress/</guid><description>&lt;p>Last summer, frustrated over the &lt;a href="https://twitter.com/niels/status/1263267428508696577">loss of my personal domain&lt;/a>, I bought a cute url and set up a Wordpress blog with the intention of sharing some content about what I was working on. Our son was born around the same time and so the site sat idle for a few months, but when I picked up writing back in November, the experience with Wordpress irked me. Wordpress is a fine CMS, it is great for getting a quick blog up and going, but I wanted more control over my content.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>niels van eck</title><link>https://nielsvaneck.com/</link><description>Recent content on niels van eck</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 20 Jan 2021 08:03:00 -0800</lastBuildDate><atom:link href="https://nielsvaneck.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Rendering Mermaid graphs in Markdown on Github</title><link>https://nielsvaneck.com/post/2021-01-20-rendering-mermaid-graphs-in-markdown-on-github/</link><pubDate>Wed, 20 Jan 2021 08:03:00 -0800</pubDate><guid>https://nielsvaneck.com/post/2021-01-20-rendering-mermaid-graphs-in-markdown-on-github/</guid><description>&lt;p>When writing documentation for software, sooner or later you&amp;rsquo;re going to hit the point at which a picture will explain in a glance what you would have a hard time describing in the proverbial &amp;ldquo;thousand words&amp;rdquo;. While documenting something technical, this usually means diving into the drawing section of whatever editor you&amp;rsquo;re using and wrangling with lines and boxes until you&amp;rsquo;re satisfied with your masterpiece or you&amp;rsquo;ve exhausted your patience with the tool.&lt;/p>
+&lt;p>I write a fair bit of Markdown which unfortunately doesn&amp;rsquo;t offer such luxuries as drawing tools and embedded editable image support. Or does it?&lt;/p>
+&lt;h3 id="typora">Typora&lt;/h3>
+&lt;p>Last year, I started using &lt;a href="https://typora.io">Typora&lt;/a>, an absolutely amazing Markdown editor. Typora lets you write Markdown in its rendered state and the interface is clutter free, reminiscent of the &amp;ldquo;distraction free&amp;rdquo; writing apps that were all the rage a few years ago. I was poking around Typora&amp;rsquo;s docs and saw something interesting; &lt;a href="https://support.typora.io/Draw-Diagrams-With-Markdown/">Draw Diagrams With Markdown&lt;/a>. As it turns out, Typora will render diagrams embedded in tagged code blocks using one of 3 Javascript graphing libraries, &lt;code>js-sequence&lt;/code>, &lt;code>flowchart.js&lt;/code> and the most versatile of the three, &lt;code>mermaid&lt;/code>.&lt;/p>
+&lt;p>All three libraries are integrated and invoked using a &lt;code>```&lt;/code> codeblock–tagged with either &lt;code>sequence&lt;/code>, &lt;code>flow&lt;/code> or &lt;code>mermaid&lt;/code>– that contains the graph definition. I decided to put it to use and drew a pretty big mermaid diagram in a readme file for one of last year&amp;rsquo;s projects. It was nice to be able to define the graph in code and keep documentation and imagery close together. &lt;em>(imagine, having search-and-replace that covers the labels in your diagrams! 🤯 )&lt;/em>&lt;/p>
+&lt;p>Unfortunately, not all Markdown viewers render mermaid–or any other–graphs, most notably, GitHub does not support them. My solution at the time was to use the &lt;a href="https://mermaid-js.github.io/mermaid-live-editor/">Mermaid Live Editor&lt;/a> to generate a rendered version of my graph and link that image in the readme file. I also &amp;ldquo;hid&amp;rdquo; the graph source in a collapsible &lt;code>&amp;lt;details&amp;gt;&lt;/code> block and added a plea to future maintainers, along with an explanation on how to generate the image. Not ideal, but at least it would show the rendered image on GitHub and hide the graph source to readers.&lt;/p>
+&lt;p>But again, &amp;ldquo;Not ideal&amp;hellip;&amp;rdquo;.&lt;/p>
+&lt;h3 id="automated-mermaid-rendering">Automated Mermaid Rendering&lt;/h3>
+&lt;p>I was going to put together a post about Typora and Mermaid and while mulling over what to write, I thought 💡 &amp;ldquo;what if I automate my work-around for rendering mermaid graphs?&amp;quot;&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> A few hours of tinkering later, I came up with a script and a &lt;code>make&lt;/code> target that can be included in any GitHub repo&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>. The script takes a Markdown file and looks for occurrences of blocks that look like this:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-markdown" data-lang="markdown">![&lt;span style="color:#f92672">graph image alt-text&lt;/span>](&lt;span style="color:#a6e22e">path/to/image.png&lt;/span>)
+&amp;lt;&lt;span style="color:#f92672">details&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#f92672">summary&lt;/span>&amp;gt;diagram source&amp;lt;/&lt;span style="color:#f92672">summary&lt;/span>&amp;gt;
+what text goes here, or what is in the summary tags doesn&amp;#39;t matter. it gets collapsed along with the following mermaid graph definition
+```mermaid
+graph TD
+A[README.md] --&amp;gt;|passed to| B
+subgraph render-md-mermaid.sh
+B{Find mermaid graphs and image paths} --&amp;gt; C(docker mermaid-cli)
+B --&amp;gt; D(docker mermaid-cli)
+end
+C --&amp;gt;|path/to/image1.png| E[Graph 1 png image]
+D --&amp;gt;|path/to/image2.svg| F[Graph 2 svg image]
+```
+&amp;lt;/&lt;span style="color:#f92672">details&lt;/span>&amp;gt;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Once the script has executed, the graph (and its source) will be rendered as follows:&lt;/p>
+&lt;p>&lt;img src="../images/render-md-mermaid.png" alt="rendered mermaid graph from the example above">&lt;/p>
+&lt;details>
+&lt;summary>diagram source&lt;/summary>
+what text goes here, or what is in the summary tags doesn't matter. it gets collapsed along with the following mermaid graph definition
+&lt;pre>&lt;code class="language-mermaid" data-lang="mermaid">graph TD
+A[README.md] --&amp;gt;|passed to| B
+subgraph render-md-mermaid.sh
+B{Find mermaid graphs and image paths} --&amp;gt; C(docker mermaid-cli)
+B --&amp;gt; D(docker mermaid-cli)
+end
+C --&amp;gt;|path/to/image1.png| E[Graph 1 png image]
+D --&amp;gt;|path/to/image2.svg| F[Graph 2 svg image]
+&lt;/code>&lt;/pre>&lt;/details>
+&lt;h3 id="render-md-mermaidsh-and-its-accompanying-make-target">&lt;code>render-md-mermaid.sh&lt;/code> and it&amp;rsquo;s accompanying &lt;code>make&lt;/code> target&lt;/h3>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-shell" data-lang="shell">&lt;span style="color:#75715e">#!/usr/bin/env bash
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75715e"># Usage: render-md-mermaid.sh document.md&lt;/span>
+&lt;span style="color:#75715e">#&lt;/span>
+&lt;span style="color:#75715e"># This can be invoked on any Markdown file to render embedded mermaid diagrams, provided they are presented in the following format:&lt;/span>
+&lt;span style="color:#75715e">#&lt;/span>
+&lt;span style="color:#75715e"># ![rendered image description](relative/path/to/rendered_image.svg)&lt;/span>
+&lt;span style="color:#75715e"># &amp;lt;details&amp;gt;&lt;/span>
+&lt;span style="color:#75715e"># &amp;lt;summary&amp;gt;diagram source&amp;lt;/summary&amp;gt;&lt;/span>
+&lt;span style="color:#75715e"># This details block is collapsed by default when viewed in GitHub. This hides the mermaid graph definition, while the rendered image&lt;/span>
+&lt;span style="color:#75715e"># linked above is shown. The details tag has to follow the image tag. (newlines allowed)&lt;/span>
+&lt;span style="color:#75715e">#&lt;/span>
+&lt;span style="color:#75715e"># ```mermaid&lt;/span>
+&lt;span style="color:#75715e"># graph LR&lt;/span>
+&lt;span style="color:#75715e"># A[README.md] --&amp;gt;|passed to| B&lt;/span>
+&lt;span style="color:#75715e"># subgraph render-md-mermaid.sh&lt;/span>
+&lt;span style="color:#75715e"># B{Find mermaid graphs and image paths} --&amp;gt; C(docker mermaid-cli)&lt;/span>
+&lt;span style="color:#75715e"># B --&amp;gt; D(docker mermaid-cli)&lt;/span>
+&lt;span style="color:#75715e"># end&lt;/span>
+&lt;span style="color:#75715e"># C --&amp;gt;|path/to/image1.png| E[Graph 1 png image]&lt;/span>
+&lt;span style="color:#75715e"># D --&amp;gt;|path/to/image2.svg| F[Graph 2 svg image]&lt;/span>
+&lt;span style="color:#75715e"># ```&lt;/span>
+&lt;span style="color:#75715e"># &amp;lt;/details&amp;gt;&lt;/span>
+&lt;span style="color:#75715e">#&lt;/span>
+&lt;span style="color:#75715e"># The script will pick up the graph definition from the mermaid code bloc and render it to the image file and path specified in the&lt;/span>
+&lt;span style="color:#75715e"># image tag using the docker version of mermaid-cli. The rendered image can be in svg or png format, whatever is specified will be generated.&lt;/span>
+markdown_input&lt;span style="color:#f92672">=&lt;/span>$1
+image_re&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;.*\.(svg|png)&lt;/span>$&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+echo &lt;span style="color:#e6db74">&amp;#34;Markdown file: &lt;/span>$markdown_input&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$1&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span> &lt;span style="color:#f92672">]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
+echo &lt;span style="color:#e6db74">&amp;#34;Usage: &lt;/span>$0&lt;span style="color:#e6db74"> document.md&amp;#34;&lt;/span>
+echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>tput setaf 1&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74">No Markdown document specified&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>tput sgr0&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+exit &lt;span style="color:#ae81ff">1&lt;/span>
+&lt;span style="color:#66d9ef">fi&lt;/span>
+mermaid_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>
+IFS&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">$&amp;#39;\n&amp;#39;&lt;/span>
+&lt;span style="color:#66d9ef">for&lt;/span> line in &lt;span style="color:#66d9ef">$(&lt;/span>perl -0777 -ne &lt;span style="color:#e6db74">&amp;#39;while(m/!\[.*?\]\(([^\)]+)\)\n+&amp;lt;details&amp;gt;([\s\S]*?)```mermaid\n([\s\S]*?)\n```/g){print &amp;#34;$1\n$3\n&amp;#34;;} &amp;#39;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$markdown_input&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>
+&lt;span style="color:#66d9ef">do&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[[&lt;/span> $line &lt;span style="color:#f92672">=&lt;/span>~ $image_re &lt;span style="color:#f92672">]]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
+mermaid_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>$line&lt;span style="color:#e6db74">.mermaid&amp;#34;&lt;/span>
+mkdir -p -- &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>mermaid_file%/*&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;span style="color:#66d9ef">else&lt;/span>
+echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$line&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &amp;gt;&amp;gt; &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$mermaid_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;span style="color:#66d9ef">fi&lt;/span>
+&lt;span style="color:#66d9ef">done&lt;/span>;
+&lt;span style="color:#66d9ef">for&lt;/span> mermaid_img in &lt;span style="color:#66d9ef">$(&lt;/span>find . -name &lt;span style="color:#e6db74">&amp;#34;*.mermaid&amp;#34;&lt;/span> | sed -E &lt;span style="color:#e6db74">&amp;#39;s/((.*).mermaid)/\2|\1/&amp;#39;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>
+&lt;span style="color:#66d9ef">do&lt;/span>
+image_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>mermaid_img%|*&lt;span style="color:#e6db74">}&lt;/span>
+mermaid_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>mermaid_img#*|&lt;span style="color:#e6db74">}&lt;/span>
+docker run --rm -t -v &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$PWD&lt;span style="color:#e6db74">:/data&amp;#34;&lt;/span> minlag/mermaid-cli:latest -o &lt;span style="color:#e6db74">&amp;#34;/data/&lt;/span>$image_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span> -i &lt;span style="color:#e6db74">&amp;#34;/data/&lt;/span>$mermaid_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span> -t neutral
+rm &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$mermaid_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;span style="color:#66d9ef">done&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>There&amp;rsquo;s quite a bit going on there, but the main bits are:&lt;/p>
+&lt;ul>
+&lt;li>a beefy regular expression that matches multiple lines, from the markdown image tag, followed by a &lt;code>details&lt;/code> block opening to a markdown code block ending before the end of that &lt;code>details&lt;/code> block.&lt;/li>
+&lt;li>this regular expression is executed using perl, which was the only way I found to reliably run a multi-line matching regular expression&lt;/li>
+&lt;li>we loop over each line in the regex output and capture the image file name and the graph source. the graph source is written to a temp file&lt;/li>
+&lt;li>next, for every graph found, it invokes the &lt;code>mermaid-cli&lt;/code> though &lt;code>docker run&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>The script can be invoked manually, but I&amp;rsquo;ve found it handy to invoke it in a &lt;code>make&lt;/code> workflow. That way, graphs are rendered without having to give it a single thought.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Makefile" data-lang="Makefile">&lt;span style="color:#a6e22e">render-md-mermaid&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#66d9ef">$(&lt;/span>shell find . -name &amp;#34;render-md-mermaid.sh&amp;#34;&lt;span style="color:#66d9ef">)&lt;/span> &lt;span style="color:#66d9ef">$(&lt;/span>shell find . -name &amp;#34;*.md&amp;#34;&lt;span style="color:#66d9ef">)&lt;/span> &lt;span style="color:#75715e">## Render all mermaid graphs in any .md file in the repository
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> @for md in &lt;span style="color:#66d9ef">$(&lt;/span>shell find . -name &lt;span style="color:#e6db74">&amp;#34;*.md&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>; &lt;span style="color:#66d9ef">do&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$&lt;span style="color:#e6db74">&amp;lt;&amp;#34;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$$&lt;span style="color:#e6db74">md&amp;#34;&lt;/span>; &lt;span style="color:#66d9ef">done&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>make&lt;/code> target uses a little trick to find the script by referencing it as a prerequisite along with all &lt;code>.md&lt;/code> files in the repository. It then loops through the &lt;code>.md&lt;/code> files and invokes &lt;code>render-md-mermaid.sh&lt;/code>. (&lt;code>$&amp;lt;&lt;/code> is set to the first prerequisite)&lt;/p>
+&lt;h3 id="conclusion">Conclusion&lt;/h3>
+&lt;p>I&amp;rsquo;m planning to put this script and other repository utilities in a separate repo on GitHub. This repo can be included as a submodule and provide its utilities to any project, without introducing a bunch of duplicated code. More on that later.&lt;/p>
+&lt;p>For now, I hope this is useful to someone. If so, or if you have suggestions, shoot me a note!&lt;/p>
+&lt;p>-&lt;a href="https://twitter.com/niels">@niels&lt;/a>&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>turns out, I was not the &lt;a href="https://github.com/neenjaw/compile-mermaid-markdown-action">first to automatically render mermaid&lt;/a> &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2" role="doc-endnote">
+&lt;p>at some point I will formalize this and other &amp;ldquo;repo&amp;rdquo; utilities in a separate project &lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>Bye, Wordpress!</title><link>https://nielsvaneck.com/post/2021-01-09-bye-wordpress/</link><pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate><guid>https://nielsvaneck.com/post/2021-01-09-bye-wordpress/</guid><description>&lt;p>Last summer, frustrated over the &lt;a href="https://twitter.com/niels/status/1263267428508696577">loss of my personal domain&lt;/a>, I bought a cute url and set up a Wordpress blog with the intention of sharing some content about what I was working on. Our son was born around the same time and so the site sat idle for a few months, but when I picked up writing back in November, the experience with Wordpress irked me. Wordpress is a fine CMS, it is great for getting a quick blog up and going, but I wanted more control over my content.&lt;/p>
 &lt;p>Recently, &lt;a href="https://twitter.com/niels/status/1339617478406631425?s=20">much to my surprise&lt;/a>, I was able to re-register nielsvaneck.com and that inspired me to move my site and finally ditch Wordpress.&lt;/p>
 &lt;p>Being a software engineer, writing in Markdown and using a Git repository as a home for my content is more natural than using an opaque CMS. With that as a basis, there are some surprisingly simple methods for setting up a website / blog. &lt;a href="https://pages.github.com">GitHub Pages&lt;/a> offers basic (and free!) hosting from a Git repo. It can be configured to serve on custom hostnames and it even handles SSL! ✔️&lt;/p>
 &lt;p>To get content in Markdown served up as HTML, GitHub Pages uses &lt;a href="https://jekyllrb.com">Jekyll&lt;/a>, an HTML generator written in Ruby, but with a little bit of work, &lt;a href="https://gohugo.io">Hugo&lt;/a>, the &amp;lsquo;static-site-generator-du-jour&amp;rsquo;, can also be used.&lt;/p>

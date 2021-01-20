@@ -90,9 +90,9 @@ rm &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$mermaid_file&lt;span style
 &lt;span style="color:#66d9ef">done&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>There&amp;rsquo;s quite a bit going on there, but the main bits are:&lt;/p>
 &lt;ul>
-&lt;li>a beefy regular expression that matches multiple lines, from the markdown image tag, followed by a &lt;code>details&lt;/code> block opening to a markdown code block ending before the end of that &lt;code>details&lt;/code> block.&lt;/li>
-&lt;li>this regular expression is executed using perl, which was the only way I found to reliably run a multi-line matching regular expression&lt;/li>
-&lt;li>we loop over each line in the regex output and capture the image file name and the graph source. the graph source is written to a temp file&lt;/li>
+&lt;li>a beefy regular expression that matches multiple lines, from the markdown image tag, followed by a &lt;code>details&lt;/code> block opening to a markdown code block ending before the end of that &lt;code>details&lt;/code> block&lt;/li>
+&lt;li>this regular expression is executed using perl, which was the only way I found to reliably run a multi-line matching regex&lt;/li>
+&lt;li>we loop over each line captured by the regex and filter out the image filename and the graph source. the graph source is written to a temporary file&lt;/li>
 &lt;li>next, for every graph found, it invokes the &lt;code>mermaid-cli&lt;/code> though &lt;code>docker run&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;p>The script can be invoked manually, but I&amp;rsquo;ve found it handy to invoke it in a &lt;code>make&lt;/code> workflow. That way, graphs are rendered without having to give it a single thought.&lt;/p>

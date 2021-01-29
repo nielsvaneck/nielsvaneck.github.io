@@ -30,7 +30,7 @@ what text goes here, or what is in the summary tags doesn't matter. it gets coll
 &lt;pre>&lt;code class="language-mermaid" data-lang="mermaid">graph TD
 A[README.md] --&amp;gt;|passed to| B
 subgraph render-md-mermaid.sh
-B{Find mermaid graphs and image paths} --&amp;gt; C(docker mermaid-cli)
+B{Find mermaid graphs&amp;lt;br&amp;gt;and image paths} --&amp;gt; C(docker mermaid-cli)
 B --&amp;gt; D(docker mermaid-cli)
 end
 C --&amp;gt;|path/to/image1.png| E[Graph 1 png image]

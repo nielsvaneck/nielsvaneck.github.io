@@ -11,7 +11,7 @@
 graph TD
     A[README.md] --&gt;|passed to| B
     subgraph render-md-mermaid.sh
-    B{Find mermaid graphs&lt;<span style=color:#f92672>br</span>&gt; and image paths} --&gt; C(docker mermaid-cli)
+    B{Find mermaid graphs&lt;<span style=color:#f92672>br</span>&gt;and image paths} --&gt; C(docker mermaid-cli)
     B --&gt; D(docker mermaid-cli)
     end
     C --&gt;|path/to/image1.png| E[Graph 1 png image]

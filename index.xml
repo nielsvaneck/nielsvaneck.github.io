@@ -1,15 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>niels van eck</title><link>https://nielsvaneck.com/</link><description>Recent content on niels van eck</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nielsvaneck.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Automating npm install</title><link>https://nielsvaneck.com/post/2021-05-18-automating-npm-install/</link><pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate><guid>https://nielsvaneck.com/post/2021-05-18-automating-npm-install/</guid><description>&lt;p>I&amp;rsquo;ve previously written about using &lt;a href="https://nielsvaneck.com/post/2020-11-21-make-as-a-command-interface-to-your-repository/">Make as a command interface for your repository&lt;/a> and the other day, I ran into a situation where using Makefiles takes away a real-life annoyance for teams working on NodeJS and other Javascript or TypeScript based projects.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>niels van eck</title><link>https://nielsvaneck.com/</link><description>Recent content on niels van eck</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 01 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nielsvaneck.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Span</title><link>https://nielsvaneck.com/post/2022-03-01-span/</link><pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate><guid>https://nielsvaneck.com/post/2022-03-01-span/</guid><description>&lt;p>Roughly two years ago, after a solid period of funemployment, I posted a &lt;a href="https://twitter.com/niels/status/1214970797632053250?s=21">Twitter thread about my readiness to rejoin the workforce&lt;/a>. I talked about interests I had developed in the time leading up to then and about my goals around career and industry. In short, it laid out the intention &amp;ldquo;to obtain an exciting –software engineering?– position in the electrification / renewable energy space&amp;rdquo;.&lt;/p>
+&lt;p>As always with plans, things went slightly different. I accepted an offer to consult for a startup, a pandemic struck and our little dude showed up in the middle of 2020.&lt;/p>
+&lt;p>About one year later, it was time to restart the search. Same goals, same parameters but in a different world. I talked to some interesting companies but ultimately found my home at &lt;a href="https://span.io">Span&lt;/a>, one year ago today, March 1st 2021 😬!&lt;/p>
+&lt;p>Outside of my wish to work for a company that positively contributes to fighting climate change, I also hoped to work on a &amp;ldquo;real&amp;rdquo; product. Something physical and something customers directly pay for. Span offers all that and more. A physical product that customers love and that enables full-home electrification to boot!&lt;/p>
+&lt;p>Reading back through that Twitter thread I consider myself super lucky. If that thread were a wishlist, all boxes would be ✔️&amp;rsquo;d.&lt;/p>
+&lt;p>The last year has been super interesting. I&amp;rsquo;ve learned a tremendous amount and I&amp;rsquo;m finding myself working on systems that I had previously been hearing about on climate &amp;amp; energy related podcasts! Wild. Aside from my experience on the software side of the business, learning about physical product development blows my mind on a daily basis.&lt;/p>
+&lt;p>So what does Span do? Span builds smart products that ease home electrification. It all started with a smart electrical panel. Not your run of the mill grey breaker box but beautifully designed-, cloud connected- home energy hub that can measure and manage energy flows and help get the most out of a solar and battery backup system.&lt;/p>
+&lt;p>Span panels can disconnect from the grid and dynamically switch all of their circuits. This means that in case of an outage, your solar panels and battery can power the house and your battery backup time is extended by switching off low priority circuits as the battery depletes. Furthermore, the panel offers deep insight into what is using the most electricity in your house and we&amp;rsquo;re working on some exciting ways to have the panels help in tricky home electrification scenarios.&lt;/p>
+&lt;p>Recently, Span announced &lt;a href="https://span.io/drive">&amp;ldquo;Drive&amp;rdquo;&lt;/a>. An EVSE&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>, more commonly known as a car charger, which combined with the brain and awareness of the Span panel will enable solar-only charging, charging from the house battery if needed and even allow extra fast charging speeds that would normally not be possible without upgrading the grid connection.&lt;/p>
+&lt;p>Span products are controlled through a mobile app and there is a cloud system that ties everything together. I have the pleasure of being part of a small team that works on that system.&lt;/p>
+&lt;p>It&amp;rsquo;s been a whole year now, and I&amp;rsquo;m a little late with the &amp;ldquo;some personal news&amp;rdquo; post, but rest assured, I&amp;rsquo;ve been having a phenomenal time. It&amp;rsquo;s been great to be back in a job, collaborate with a team, occasionally work in an office and do &amp;ldquo;normal&amp;rdquo; things like going out for lunch and having fun random conversations with coworkers. Add to that my excitement about Span, the tech I work with- and all the new things I continue to learn on a daily basis, and you can basically only conclude I&amp;rsquo;m happy as a clam.&lt;/p>
+&lt;p>Year 2. Let&amp;rsquo;s do this⚡️&lt;/p>
+&lt;p>-&lt;a href="https://twitter.com/niels">@niels&lt;/a>&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>Electric Vehicle Supply Equipment&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>Automating npm install</title><link>https://nielsvaneck.com/post/2021-05-18-automating-npm-install/</link><pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate><guid>https://nielsvaneck.com/post/2021-05-18-automating-npm-install/</guid><description>&lt;p>I&amp;rsquo;ve previously written about using &lt;a href="https://nielsvaneck.com/post/2020-11-21-make-as-a-command-interface-to-your-repository/">Make as a command interface for your repository&lt;/a> and the other day, I ran into a situation where using Makefiles takes away a real-life annoyance for teams working on NodeJS and other Javascript or TypeScript based projects.&lt;/p>
 &lt;p>When growing teams work in repositories that use NPM for Yarn for package management, dependency updates will enter the local workspace frequently when the main branch is pulled. Unless you&amp;rsquo;re religious about running &lt;code>npm install&lt;/code> after every &lt;code>git pull&lt;/code>, updating local dependencies of often omitted and sometimes leads to confusing red herring bugs or in the very least, lost time.&lt;/p>
 &lt;p>Soon after starting my current job, I introduced Makefiles in our repositories to automate build tasks and starting dependent services like Postgres and Redis containers before bringing up our application server. This put us in a good position to apply a small trick that puts the package dependency problem behind us and automates npm install execution.&lt;/p>
 &lt;p>The trick involves a &amp;ldquo;sentinel&amp;rdquo; target, named for the sentinel file it creates after performing its task which in this case is; running &lt;code>npm install&lt;/code>.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Makefile" data-lang="Makefile">&lt;span style="color:#a6e22e">.npm-install.sentinel&lt;/span>&lt;span style="color:#f92672">:&lt;/span> package.json package-lock.json
-@npm install
-@touch .npm-install.sentinel
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>.npm-install.sentinel&lt;/code> target depends on &lt;code>package.json&lt;/code> and &lt;code>package-lock.json&lt;/code> (Yarn users would use &lt;code>yarn.lock&lt;/code> instead), meaning that the target only runs if no file named &lt;code>.npm-install.sentinel&lt;/code> exists or if it is older than either &lt;code>package.json&lt;/code> or &lt;code>package-lock.json&lt;/code>, which triggers automatic execution of &lt;code>npm install&lt;/code> when needed.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-Makefile" data-lang="Makefile">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">.npm-install.sentinel&lt;/span>&lt;span style="color:#f92672">:&lt;/span> package.json package-lock.json
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> @npm install
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> @touch .npm-install.sentinel
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>.npm-install.sentinel&lt;/code> target depends on &lt;code>package.json&lt;/code> and &lt;code>package-lock.json&lt;/code> (Yarn users would use &lt;code>yarn.lock&lt;/code> instead), meaning that the target only runs if no file named &lt;code>.npm-install.sentinel&lt;/code> exists or if it is older than either &lt;code>package.json&lt;/code> or &lt;code>package-lock.json&lt;/code>, which triggers automatic execution of &lt;code>npm install&lt;/code> when needed.&lt;/p>
 &lt;p>The next step is to add &lt;code>.npm-install.sentinel&lt;/code> as a prerequisite on all targets that require up-to-date npm dependencies. For example:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Makefile" data-lang="Makefile">&lt;span style="color:#a6e22e">start-dev-server&lt;/span>&lt;span style="color:#f92672">:&lt;/span> start-db-and-redis .npm-install.sentinel
-@npx nodemon
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>In addition to requiring local services to be started, the added prerequisite will ensure &lt;code>npm install&lt;/code> will be executed (if needed) before nodemon starts the server.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-Makefile" data-lang="Makefile">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">start-dev-server&lt;/span>&lt;span style="color:#f92672">:&lt;/span> start-db-and-redis .npm-install.sentinel
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> @npx nodemon
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In addition to requiring local services to be started, the added prerequisite will ensure &lt;code>npm install&lt;/code> will be executed (if needed) before nodemon starts the server.&lt;/p>
 &lt;p>If a local repository update brings in an updated &lt;code>package-lock.json&lt;/code> file, running any make target that depends on &lt;code>.npm-install.sentinel&lt;/code> will trigger a dependency update without you ever having to think about it again.&lt;/p>
 &lt;p>It&amp;rsquo;s a small trick, but maybe it&amp;rsquo;ll help you save your team some time and annoyance. Enjoy.&lt;/p>
 &lt;p>-&lt;a href="https://twitter.com/niels">@niels&lt;/a>&lt;/p></description></item><item><title>Smoking Trout on a Pit Barrel Cooker</title><link>https://nielsvaneck.com/post/2021-02-19-smoking-trout-on-a-pit-barrel-cooker/</link><pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate><guid>https://nielsvaneck.com/post/2021-02-19-smoking-trout-on-a-pit-barrel-cooker/</guid><description>&lt;p>Sitting by the water, staring at the end of a fishing rod was never a thing in my family even though my childhood home is close to several recreational fishing ponds. I didn&amp;rsquo;t grow up with much exposure to seafood either, as my home village is about an hour and a half from the North Sea, which by Dutch standards is about the equivalent of Colorado&amp;rsquo;s proximity to the nearest ocean. One exception that forms a staple &amp;ldquo;fish at home&amp;rdquo; memory is smoked trout. The fishing pond purveyors would smoke whole trout once or twice a week and my dad would frequently pick up a few for dinner.&lt;/p>
@@ -48,22 +68,27 @@ Add about a half cup of salt and let the fish brine in the fridge for at least t
 &lt;h2 id="render-md-mermaid">render-md-mermaid&lt;/h2>
 &lt;p>The Action I built, &lt;a href="https://github.com/marketplace/actions/render-md-mermaid">&lt;code>render-md-mermaid&lt;/code>&lt;/a>, can be used in any GitHub repository. Put it in a workflow, together with &lt;a href="https://github.com/marketplace/actions/checkout">&lt;code>checkout&lt;/code>&lt;/a> and &lt;a href="https://github.com/marketplace/actions/git-auto-commit">&lt;code>git-auto-commit&lt;/code>&lt;/a> and it will automatically render any Mermaid diagram in any Markdown file (if &lt;a href="https://github.com/nielsvaneck/render-md-mermaid/blob/main/README.md#mermaid-in-markdown">formatted correctly&lt;/a>) wherever it runs.&lt;/p>
 &lt;p>To install it in your repo, add the following &lt;code>yaml&lt;/code> configuration to &lt;code>.github/workflows/render-md-mermaid.yml&lt;/code>.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">render-md-mermaid&lt;/span>
-&lt;span style="color:#f92672">on&lt;/span>: &lt;span style="color:#ae81ff">push&lt;/span>
-&lt;span style="color:#f92672">jobs&lt;/span>:
-&lt;span style="color:#f92672">render-md-mermaid&lt;/span>:
-&lt;span style="color:#f92672">runs-on&lt;/span>: &lt;span style="color:#ae81ff">ubuntu-latest&lt;/span>
-&lt;span style="color:#f92672">steps&lt;/span>:
-- &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Checkout code&lt;/span>
-&lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">actions/checkout@v2&lt;/span>
-- &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Render images for every Mermaid diagram in all Markdown files (*.md) in the repo&lt;/span>
-&lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">nielsvaneck/render-md-mermaid@v2&lt;/span>
-- &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Commit rendered png and svg files&lt;/span>
-&lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">stefanzweifel/git-auto-commit-action@v4&lt;/span>
-&lt;span style="color:#f92672">with&lt;/span>:
-&lt;span style="color:#f92672">file_pattern&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;*[.svg,.png]&amp;#34;&lt;/span>
-&lt;span style="color:#f92672">commit_message&lt;/span>: &lt;span style="color:#ae81ff">automatically rendered mermaid diagrams&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>This workflow uses GitHub&amp;rsquo;s &lt;code>checkout&lt;/code> action to get the latest copy of your repository, then runs &lt;code>render-md-mermaid&lt;/code> on it and finally commits any &lt;code>.svg&lt;/code> or &lt;code>.png&lt;/code> files that were generated in the process back to the repository.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">render-md-mermaid&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">on&lt;/span>: &lt;span style="color:#ae81ff">push&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">jobs&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">render-md-mermaid&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">runs-on&lt;/span>: &lt;span style="color:#ae81ff">ubuntu-latest&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">steps&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Checkout code&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">actions/checkout@v2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Render images for every Mermaid diagram in all Markdown files (*.md) in the repo&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">nielsvaneck/render-md-mermaid@v2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Commit rendered png and svg files&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">stefanzweifel/git-auto-commit-action@v4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">with&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">file_pattern&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;*[.svg,.png]&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">commit_message&lt;/span>: &lt;span style="color:#ae81ff">automatically rendered mermaid diagrams&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This workflow uses GitHub&amp;rsquo;s &lt;code>checkout&lt;/code> action to get the latest copy of your repository, then runs &lt;code>render-md-mermaid&lt;/code> on it and finally commits any &lt;code>.svg&lt;/code> or &lt;code>.png&lt;/code> files that were generated in the process back to the repository.&lt;/p>
 &lt;h2 id="under-the-hood">Under the hood&lt;/h2>
 &lt;p>The &lt;a href="https://github.com/nielsvaneck/render-md-mermaid">render-md-mermaid Action&lt;/a> is built using the mermaid-cli Docker image. I had to make some small tweaks to the way the mermaid client is invoked, but the &lt;code>render-md-mermaid.sh&lt;/code> script that does the heavy lifting is able to run stand-alone and in-container.&lt;/p>
 &lt;p>In the end, the biggest hurdle I ran into was figuring out the correct &lt;code>file_pattern&lt;/code> parameter to &lt;code>git-auto-commit&lt;/code>. Even though the script &lt;em>should&lt;/em> only create image files, I wanted to make sure nothing else gets comitted by accident.&lt;/p>
@@ -79,28 +104,29 @@ Add about a half cup of salt and let the fish brine in the fridge for at least t
 &lt;p>Unfortunately, not all Markdown viewers render mermaid–or any other–graphs, most notably, GitHub does not support them. My solution at the time was to use the &lt;a href="https://mermaid-js.github.io/mermaid-live-editor/">Mermaid Live Editor&lt;/a> to generate a rendered version of my graph and link that image in the readme file. I also &amp;ldquo;hid&amp;rdquo; the graph source in a collapsible &lt;code>&amp;lt;details&amp;gt;&lt;/code> block and added a plea to future maintainers, along with an explanation on how to generate the image. Not ideal, but at least it would show the rendered image on GitHub and hide the graph source to readers.&lt;/p>
 &lt;p>But again, &amp;ldquo;Not ideal&amp;hellip;&amp;rdquo;.&lt;/p>
 &lt;h3 id="automated-mermaid-rendering">Automated Mermaid Rendering&lt;/h3>
-&lt;p>I was going to put together a post about Typora and Mermaid and while mulling over what to write, I thought 💡 &amp;ldquo;what if I automate my work-around for rendering mermaid graphs?&amp;quot;&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> A few hours of tinkering later, I came up with a script and a &lt;code>make&lt;/code> target that can be included in any GitHub repo&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>. The script takes a Markdown file and looks for occurrences of blocks that look like this:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-markdown" data-lang="markdown">![&lt;span style="color:#f92672">graph image alt-text&lt;/span>](&lt;span style="color:#a6e22e">path/to/image.png&lt;/span>)
-&amp;lt;&lt;span style="color:#f92672">details&lt;/span>&amp;gt;
-&amp;lt;&lt;span style="color:#f92672">summary&lt;/span>&amp;gt;diagram source&amp;lt;/&lt;span style="color:#f92672">summary&lt;/span>&amp;gt;
-what text goes here, or what is in the summary tags doesn&amp;#39;t matter. it gets collapsed along with the following mermaid graph definition
-```mermaid
-graph TD
-A[README.md] --&amp;gt;|passed to| B
-subgraph render-md-mermaid.sh
-B{Find mermaid graphs&amp;lt;&lt;span style="color:#f92672">br&lt;/span>&amp;gt;and image paths} --&amp;gt; C(docker mermaid-cli)
-B --&amp;gt; D(docker mermaid-cli)
-end
-C --&amp;gt;|path/to/image1.png| E[Graph 1 png image]
-D --&amp;gt;|path/to/image2.svg| F[Graph 2 svg image]
-```
-&amp;lt;/&lt;span style="color:#f92672">details&lt;/span>&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Once the script has executed, the graph (and its source) will be rendered as follows:&lt;/p>
+&lt;p>I was going to put together a post about Typora and Mermaid and while mulling over what to write, I thought 💡 &amp;ldquo;what if I automate my work-around for rendering mermaid graphs?&amp;rdquo;&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> A few hours of tinkering later, I came up with a script and a &lt;code>make&lt;/code> target that can be included in any GitHub repo&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>. The script takes a Markdown file and looks for occurrences of blocks that look like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>![&lt;span style="color:#f92672">graph image alt-text&lt;/span>](&lt;span style="color:#a6e22e">path/to/image.png&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">details&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &amp;lt;&lt;span style="color:#f92672">summary&lt;/span>&amp;gt;diagram source&amp;lt;/&lt;span style="color:#f92672">summary&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> what text goes here, or what is in the summary tags doesn&amp;#39;t matter. it gets collapsed along with the following mermaid graph definition
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ```mermaid
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>graph TD
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> A[README.md] --&amp;gt;|passed to| B
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> subgraph render-md-mermaid.sh
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> B{Find mermaid graphs&amp;lt;&lt;span style="color:#f92672">br&lt;/span>&amp;gt;and image paths} --&amp;gt; C(docker mermaid-cli)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> B --&amp;gt; D(docker mermaid-cli)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> end
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> C --&amp;gt;|path/to/image1.png| E[Graph 1 png image]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> D --&amp;gt;|path/to/image2.svg| F[Graph 2 svg image]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>```
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">details&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Once the script has executed, the graph (and its source) will be rendered as follows:&lt;/p>
 &lt;p>&lt;img src="https://nielsvaneck.com/post/images/render-md-mermaid.png" alt="rendered mermaid graph from the example above">&lt;/p>
 &lt;details>
 &lt;summary>diagram source&lt;/summary>
 what text goes here, or what is in the summary tags doesn't matter. it gets collapsed along with the following mermaid graph definition
-&lt;pre>&lt;code class="language-mermaid" data-lang="mermaid">graph TD
+&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">graph TD
 A[README.md] --&amp;gt;|passed to| B
 subgraph render-md-mermaid.sh
 B{Find mermaid graphs&amp;lt;br&amp;gt;and image paths} --&amp;gt; C(docker mermaid-cli)
@@ -110,70 +136,73 @@ C --&amp;gt;|path/to/image1.png| E[Graph 1 png image]
 D --&amp;gt;|path/to/image2.svg| F[Graph 2 svg image]
 &lt;/code>&lt;/pre>&lt;/details>
 &lt;h3 id="render-md-mermaidsh-and-its-accompanying-make-target">&lt;code>render-md-mermaid.sh&lt;/code> and it&amp;rsquo;s accompanying &lt;code>make&lt;/code> target&lt;/h3>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-shell" data-lang="shell">&lt;span style="color:#75715e">#!/usr/bin/env bash
-&lt;/span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75715e"># Usage: render-md-mermaid.sh document.md&lt;/span>
-&lt;span style="color:#75715e">#&lt;/span>
-&lt;span style="color:#75715e"># This can be invoked on any Markdown file to render embedded mermaid diagrams, provided they are presented in the following format:&lt;/span>
-&lt;span style="color:#75715e">#&lt;/span>
-&lt;span style="color:#75715e"># ![rendered image description](relative/path/to/rendered_image.svg)&lt;/span>
-&lt;span style="color:#75715e"># &amp;lt;details&amp;gt;&lt;/span>
-&lt;span style="color:#75715e"># &amp;lt;summary&amp;gt;diagram source&amp;lt;/summary&amp;gt;&lt;/span>
-&lt;span style="color:#75715e"># This details block is collapsed by default when viewed in GitHub. This hides the mermaid graph definition, while the rendered image&lt;/span>
-&lt;span style="color:#75715e"># linked above is shown. The details tag has to follow the image tag. (newlines allowed)&lt;/span>
-&lt;span style="color:#75715e">#&lt;/span>
-&lt;span style="color:#75715e"># ```mermaid&lt;/span>
-&lt;span style="color:#75715e"># graph LR&lt;/span>
-&lt;span style="color:#75715e"># A[README.md] --&amp;gt;|passed to| B&lt;/span>
-&lt;span style="color:#75715e"># subgraph render-md-mermaid.sh&lt;/span>
-&lt;span style="color:#75715e"># B{Find mermaid graphs&amp;lt;br&amp;gt;and image paths} --&amp;gt; C(docker mermaid-cli)&lt;/span>
-&lt;span style="color:#75715e"># B --&amp;gt; D(docker mermaid-cli)&lt;/span>
-&lt;span style="color:#75715e"># end&lt;/span>
-&lt;span style="color:#75715e"># C --&amp;gt;|path/to/image1.png| E[Graph 1 png image]&lt;/span>
-&lt;span style="color:#75715e"># D --&amp;gt;|path/to/image2.svg| F[Graph 2 svg image]&lt;/span>
-&lt;span style="color:#75715e"># ```&lt;/span>
-&lt;span style="color:#75715e"># &amp;lt;/details&amp;gt;&lt;/span>
-&lt;span style="color:#75715e">#&lt;/span>
-&lt;span style="color:#75715e"># The script will pick up the graph definition from the mermaid code bloc and render it to the image file and path specified in the&lt;/span>
-&lt;span style="color:#75715e"># image tag using the docker version of mermaid-cli. The rendered image can be in svg or png format, whatever is specified will be generated.&lt;/span>
-markdown_input&lt;span style="color:#f92672">=&lt;/span>$1
-image_re&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;.*\.(svg|png)&lt;/span>$&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
-echo &lt;span style="color:#e6db74">&amp;#34;Markdown file: &lt;/span>$markdown_input&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
-&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$1&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span> &lt;span style="color:#f92672">]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
-echo &lt;span style="color:#e6db74">&amp;#34;Usage: &lt;/span>$0&lt;span style="color:#e6db74"> document.md&amp;#34;&lt;/span>
-echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>tput setaf 1&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74">No Markdown document specified&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>tput sgr0&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
-exit &lt;span style="color:#ae81ff">1&lt;/span>
-&lt;span style="color:#66d9ef">fi&lt;/span>
-rm .render-md-mermaid-config.json .render-md-mermaid.css
-mermaid_config&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;{&amp;#34;flowchart&amp;#34;: {&amp;#34;useMaxWidth&amp;#34;: false }}&amp;#39;&lt;/span>
-mermaid_css&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;#container &amp;gt; svg { max-width: 100% !important; }&amp;#39;&lt;/span>
-echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$mermaid_config&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &amp;gt;&amp;gt; .render-md-mermaid-config.json
-echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$mermaid_css&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &amp;gt;&amp;gt; .render-md-mermaid.css
-mermaid_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>
-IFS&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">$&amp;#39;\n&amp;#39;&lt;/span>
-&lt;span style="color:#66d9ef">for&lt;/span> line in &lt;span style="color:#66d9ef">$(&lt;/span>perl -0777 -ne &lt;span style="color:#e6db74">&amp;#39;while(m/!\[.*?\]\(([^\)]+)\)\n+&amp;lt;details&amp;gt;([\s\S]*?)```mermaid\n([\s\S]*?)\n```/g){print &amp;#34;$1\n$3\n&amp;#34;;} &amp;#39;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$markdown_input&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>
-&lt;span style="color:#66d9ef">do&lt;/span>
-&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[[&lt;/span> $line &lt;span style="color:#f92672">=&lt;/span>~ $image_re &lt;span style="color:#f92672">]]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
-mermaid_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>$line&lt;span style="color:#e6db74">.mermaid&amp;#34;&lt;/span>
-&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[[&lt;/span> ! &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$mermaid_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">=&lt;/span>~ ^.*/.* &lt;span style="color:#f92672">]]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
-mermaid_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;./&lt;/span>$mermaid_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
-&lt;span style="color:#66d9ef">fi&lt;/span>
-mkdir -p -- &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>mermaid_file%/*&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
-&lt;span style="color:#66d9ef">else&lt;/span>
-echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$line&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &amp;gt;&amp;gt; &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$mermaid_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
-&lt;span style="color:#66d9ef">fi&lt;/span>
-&lt;span style="color:#66d9ef">done&lt;/span>;
-&lt;span style="color:#66d9ef">for&lt;/span> mermaid_img in &lt;span style="color:#66d9ef">$(&lt;/span>find . -name &lt;span style="color:#e6db74">&amp;#34;*.mermaid&amp;#34;&lt;/span> | sed -E &lt;span style="color:#e6db74">&amp;#39;s/((.*).mermaid)/\2|\1/&amp;#39;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>
-&lt;span style="color:#66d9ef">do&lt;/span>
-image_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>mermaid_img%|*&lt;span style="color:#e6db74">}&lt;/span>
-mermaid_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>mermaid_img#*|&lt;span style="color:#e6db74">}&lt;/span>
-docker run --rm -t -v &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$PWD&lt;span style="color:#e6db74">:/data&amp;#34;&lt;/span> minlag/mermaid-cli:latest -o &lt;span style="color:#e6db74">&amp;#34;/data/&lt;/span>$image_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span> -i &lt;span style="color:#e6db74">&amp;#34;/data/&lt;/span>$mermaid_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span> -t neutral -C &lt;span style="color:#e6db74">&amp;#34;/data/.render-md-mermaid.css&amp;#34;&lt;/span> -c &lt;span style="color:#e6db74">&amp;#34;/data/.render-md-mermaid-config.json&amp;#34;&lt;/span> -s &lt;span style="color:#ae81ff">4&lt;/span>
-&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[[&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$image_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">=&lt;/span>~ ^.*&lt;span style="color:#ae81ff">\.&lt;/span>svg$ &lt;span style="color:#f92672">]]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
-sed -i &lt;span style="color:#e6db74">&amp;#34;.bak&amp;#34;&lt;/span> -e &lt;span style="color:#e6db74">&amp;#39;s/&amp;lt;br&amp;gt;/&amp;lt;br\/&amp;gt;/g&amp;#39;&lt;/span> $image_file
-&lt;span style="color:#66d9ef">fi&lt;/span>
-rm &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$mermaid_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$image_file&lt;span style="color:#e6db74">.bak&amp;#34;&lt;/span>
-&lt;span style="color:#66d9ef">done&lt;/span>
-rm .render-md-mermaid-config.json .render-md-mermaid.css
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>There&amp;rsquo;s quite a bit going on there, but the main bits are:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#!/usr/bin/env bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75715e"># Usage: render-md-mermaid.sh document.md&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># This can be invoked on any Markdown file to render embedded mermaid diagrams, provided they are presented in the following format:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># ![rendered image description](relative/path/to/rendered_image.svg)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># &amp;lt;details&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># &amp;lt;summary&amp;gt;diagram source&amp;lt;/summary&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># This details block is collapsed by default when viewed in GitHub. This hides the mermaid graph definition, while the rendered image&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># linked above is shown. The details tag has to follow the image tag. (newlines allowed)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># ```mermaid&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># graph LR&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># A[README.md] --&amp;gt;|passed to| B&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># subgraph render-md-mermaid.sh&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># B{Find mermaid graphs&amp;lt;br&amp;gt;and image paths} --&amp;gt; C(docker mermaid-cli)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># B --&amp;gt; D(docker mermaid-cli)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># end&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># C --&amp;gt;|path/to/image1.png| E[Graph 1 png image]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># D --&amp;gt;|path/to/image2.svg| F[Graph 2 svg image]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># ```&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># &amp;lt;/details&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># The script will pick up the graph definition from the mermaid code bloc and render it to the image file and path specified in the&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># image tag using the docker version of mermaid-cli. The rendered image can be in svg or png format, whatever is specified will be generated.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>markdown_input&lt;span style="color:#f92672">=&lt;/span>$1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>image_re&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;.*\.(svg|png)&lt;/span>$&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;Markdown file: &lt;/span>$markdown_input&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$1&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span> &lt;span style="color:#f92672">]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#e6db74">&amp;#34;Usage: &lt;/span>$0&lt;span style="color:#e6db74"> document.md&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>tput setaf 1&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74">No Markdown document specified&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>tput sgr0&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> exit &lt;span style="color:#ae81ff">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>rm .render-md-mermaid-config.json .render-md-mermaid.css
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mermaid_config&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;{&amp;#34;flowchart&amp;#34;: {&amp;#34;useMaxWidth&amp;#34;: false }}&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mermaid_css&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;#container &amp;gt; svg { max-width: 100% !important; }&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$mermaid_config&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &amp;gt;&amp;gt; .render-md-mermaid-config.json
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$mermaid_css&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &amp;gt;&amp;gt; .render-md-mermaid.css
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mermaid_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>IFS&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">$&amp;#39;\n&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> line in &lt;span style="color:#66d9ef">$(&lt;/span>perl -0777 -ne &lt;span style="color:#e6db74">&amp;#39;while(m/!\[.*?\]\(([^\)]+)\)\n+&amp;lt;details&amp;gt;([\s\S]*?)```mermaid\n([\s\S]*?)\n```/g){print &amp;#34;$1\n$3\n&amp;#34;;} &amp;#39;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$markdown_input&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[[&lt;/span> $line &lt;span style="color:#f92672">=&lt;/span>~ $image_re &lt;span style="color:#f92672">]]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mermaid_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>$line&lt;span style="color:#e6db74">.mermaid&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[[&lt;/span> ! &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$mermaid_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">=&lt;/span>~ ^.*/.* &lt;span style="color:#f92672">]]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mermaid_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;./&lt;/span>$mermaid_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mkdir -p -- &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>mermaid_file%/*&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$line&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &amp;gt;&amp;gt; &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$mermaid_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">done&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> mermaid_img in &lt;span style="color:#66d9ef">$(&lt;/span>find . -name &lt;span style="color:#e6db74">&amp;#34;*.mermaid&amp;#34;&lt;/span> | sed -E &lt;span style="color:#e6db74">&amp;#39;s/((.*).mermaid)/\2|\1/&amp;#39;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">do&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> image_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>mermaid_img%|*&lt;span style="color:#e6db74">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mermaid_file&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>mermaid_img#*|&lt;span style="color:#e6db74">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> docker run --rm -t -v &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$PWD&lt;span style="color:#e6db74">:/data&amp;#34;&lt;/span> minlag/mermaid-cli:latest -o &lt;span style="color:#e6db74">&amp;#34;/data/&lt;/span>$image_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span> -i &lt;span style="color:#e6db74">&amp;#34;/data/&lt;/span>$mermaid_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span> -t neutral -C &lt;span style="color:#e6db74">&amp;#34;/data/.render-md-mermaid.css&amp;#34;&lt;/span> -c &lt;span style="color:#e6db74">&amp;#34;/data/.render-md-mermaid-config.json&amp;#34;&lt;/span> -s &lt;span style="color:#ae81ff">4&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[[&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$image_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">=&lt;/span>~ ^.*&lt;span style="color:#ae81ff">\.&lt;/span>svg$ &lt;span style="color:#f92672">]]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sed -i &lt;span style="color:#e6db74">&amp;#34;.bak&amp;#34;&lt;/span> -e &lt;span style="color:#e6db74">&amp;#39;s/&amp;lt;br&amp;gt;/&amp;lt;br\/&amp;gt;/g&amp;#39;&lt;/span> $image_file
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> rm &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$mermaid_file&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$image_file&lt;span style="color:#e6db74">.bak&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">done&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>rm .render-md-mermaid-config.json .render-md-mermaid.css
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>There&amp;rsquo;s quite a bit going on there, but the main bits are:&lt;/p>
 &lt;ul>
 &lt;li>a beefy regular expression that matches multiple lines, from the markdown image tag, followed by a &lt;code>details&lt;/code> block opening to a markdown code block ending before the end of that &lt;code>details&lt;/code> block&lt;/li>
 &lt;li>this regular expression is executed using perl, which was the only way I found to reliably run a multi-line matching regex&lt;/li>
@@ -182,9 +211,9 @@ rm .render-md-mermaid-config.json .render-md-mermaid.css
 &lt;li>finally, for svg output we work around a bug where rendered newlines in the svg code are not properly formatted&lt;/li>
 &lt;/ul>
 &lt;p>The script can be invoked manually, but I&amp;rsquo;ve found it handy to invoke it in a &lt;code>make&lt;/code> workflow. That way, graphs are rendered without having to give it a single thought.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Makefile" data-lang="Makefile">&lt;span style="color:#a6e22e">render-md-mermaid&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#66d9ef">$(&lt;/span>shell find . -name &amp;#34;render-md-mermaid.sh&amp;#34;&lt;span style="color:#66d9ef">)&lt;/span> &lt;span style="color:#66d9ef">$(&lt;/span>shell find . -name &amp;#34;*.md&amp;#34;&lt;span style="color:#66d9ef">)&lt;/span> &lt;span style="color:#75715e">## Render all mermaid graphs in any .md file in the repository
-&lt;/span>&lt;span style="color:#75715e">&lt;/span> @for md in &lt;span style="color:#66d9ef">$(&lt;/span>shell find . -name &lt;span style="color:#e6db74">&amp;#34;*.md&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>; &lt;span style="color:#66d9ef">do&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$&lt;span style="color:#e6db74">&amp;lt;&amp;#34;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$$&lt;span style="color:#e6db74">md&amp;#34;&lt;/span>; &lt;span style="color:#66d9ef">done&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>make&lt;/code> target uses a little trick to find the script by referencing it as a prerequisite along with all &lt;code>.md&lt;/code> files in the repository. It then loops through the &lt;code>.md&lt;/code> files and invokes &lt;code>render-md-mermaid.sh&lt;/code>. (&lt;code>$&amp;lt;&lt;/code> is set to the first prerequisite)&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-Makefile" data-lang="Makefile">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">render-md-mermaid&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#66d9ef">$(&lt;/span>shell find . -name &amp;#34;render-md-mermaid.sh&amp;#34;&lt;span style="color:#66d9ef">)&lt;/span> &lt;span style="color:#66d9ef">$(&lt;/span>shell find . -name &amp;#34;*.md&amp;#34;&lt;span style="color:#66d9ef">)&lt;/span> &lt;span style="color:#75715e">## Render all mermaid graphs in any .md file in the repository
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> @for md in &lt;span style="color:#66d9ef">$(&lt;/span>shell find . -name &lt;span style="color:#e6db74">&amp;#34;*.md&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">)&lt;/span>; &lt;span style="color:#66d9ef">do&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$&lt;span style="color:#e6db74">&amp;lt;&amp;#34;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$$&lt;span style="color:#e6db74">md&amp;#34;&lt;/span>; &lt;span style="color:#66d9ef">done&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>make&lt;/code> target uses a little trick to find the script by referencing it as a prerequisite along with all &lt;code>.md&lt;/code> files in the repository. It then loops through the &lt;code>.md&lt;/code> files and invokes &lt;code>render-md-mermaid.sh&lt;/code>. (&lt;code>$&amp;lt;&lt;/code> is set to the first prerequisite)&lt;/p>
 &lt;h3 id="conclusion">Conclusion&lt;/h3>
 &lt;p>I&amp;rsquo;m planning to put this script and other repository utilities in a separate repo on GitHub. This repo can be included as a submodule and provide its utilities to any project, without introducing a bunch of duplicated code. More on that later.&lt;/p>
 &lt;p>&lt;strong>Update&lt;/strong>: &lt;a href="https://nielsvaneck.com/post/2021-01-31-render-md-markdown-a-github-action/">I ended up writing a GitHub Action that uses this script with minimal setup required.&lt;/a>&lt;/p>
@@ -240,13 +269,13 @@ rm .render-md-mermaid-config.json .render-md-mermaid.css
 &lt;p>Most Makefiles contain a boat load of targets, alphabetically-ish sorted if you&amp;rsquo;re lucky. There is no good way to distinguish command targets from automatic targets, let alone to get a quick idea of what you can do with a Makefile.&lt;/p>
 &lt;p>Despite that shortcoming, I still thought it was worth writing about this particular way of Makefile usage. In past employment and projects, I’ve seen countless examples of important commands having to be copied from documentation, and I don’t know how I would have done my job without relying heavily on bash history. Makefiles with a variety of command targets would have been very valuable to me in those days.&lt;/p>
 &lt;p>Then, while doing some research for this post, I came across &lt;a href="https://victoria.dev/blog/how-to-create-a-self-documenting-makefile/">how to create a self-documenting Makefile&lt;/a>, by &lt;a href="https://victoria.dev/">Victoria Drake&lt;/a>. In that article, she not only outlines my repository command line tool use-case for Makefiles, it goes on to introduce the exact thing I had missed in my Makefiles, a quick way to get an overview of the commands contained within them 🤯 🎉.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-Makefile" data-lang="Makefile">&lt;span style="color:#a6e22e">.PHONY&lt;/span>&lt;span style="color:#f92672">:&lt;/span> help
-&lt;span style="color:#a6e22e">help&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#75715e">## Show this help
-&lt;/span>&lt;span style="color:#75715e">&lt;/span> @egrep -h &lt;span style="color:#e6db74">&amp;#39;\s##\s&amp;#39;&lt;/span> &lt;span style="color:#66d9ef">$(&lt;/span>MAKEFILE_LIST&lt;span style="color:#66d9ef">)&lt;/span> | &lt;span style="color:#ae81ff">\
-&lt;/span>&lt;span style="color:#ae81ff">&lt;/span> sort | &lt;span style="color:#ae81ff">\
-&lt;/span>&lt;span style="color:#ae81ff">&lt;/span> awk &lt;span style="color:#e6db74">&amp;#39;BEGIN {FS = &amp;#34;:.*?## &amp;#34;}; \
-&lt;/span>&lt;span style="color:#e6db74"> {printf &amp;#34;\033[36m%-20s\033[0m %s\n&amp;#34;, $$1, $$2}&amp;#39;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Some more Googling revealed that variants of this &lt;code>help&lt;/code> target have been presented &lt;a href="https://www.cmcrossroads.com/print/article/self-documenting-makefiles">a&lt;/a> &lt;a href="https://gist.github.com/prwhite/8168133">few&lt;/a> &lt;a href="https://www.thapaliya.com/en/writings/well-documented-makefiles/">numerous&lt;/a> &lt;a href="https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html">times&lt;/a> &lt;a href="https://nedbatchelder.com/blog/201804/makefile_help_target.html">over&lt;/a> &lt;a href="https://aben20807.github.io/posts/20190402-makefile-help-message/">the&lt;/a> &lt;a href="https://stackoverflow.com/questions/8889035/how-to-document-a-makefile">years&lt;/a>, ultimately evolving to the version published by Victoria. Here&amp;rsquo;s how it works:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-Makefile" data-lang="Makefile">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">.PHONY&lt;/span>&lt;span style="color:#f92672">:&lt;/span> help
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">help&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#75715e">## Show this help
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> @egrep -h &lt;span style="color:#e6db74">&amp;#39;\s##\s&amp;#39;&lt;/span> &lt;span style="color:#66d9ef">$(&lt;/span>MAKEFILE_LIST&lt;span style="color:#66d9ef">)&lt;/span> | &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> sort | &lt;span style="color:#ae81ff">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">&lt;/span> awk &lt;span style="color:#e6db74">&amp;#39;BEGIN {FS = &amp;#34;:.*?## &amp;#34;}; \
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> {printf &amp;#34;\033[36m%-20s\033[0m %s\n&amp;#34;, $$1, $$2}&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Some more Googling revealed that variants of this &lt;code>help&lt;/code> target have been presented &lt;a href="https://www.cmcrossroads.com/print/article/self-documenting-makefiles">a&lt;/a> &lt;a href="https://gist.github.com/prwhite/8168133">few&lt;/a> &lt;a href="https://www.thapaliya.com/en/writings/well-documented-makefiles/">numerous&lt;/a> &lt;a href="https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html">times&lt;/a> &lt;a href="https://nedbatchelder.com/blog/201804/makefile_help_target.html">over&lt;/a> &lt;a href="https://aben20807.github.io/posts/20190402-makefile-help-message/">the&lt;/a> &lt;a href="https://stackoverflow.com/questions/8889035/how-to-document-a-makefile">years&lt;/a>, ultimately evolving to the version published by Victoria. Here&amp;rsquo;s how it works:&lt;/p>
 &lt;ul>
 &lt;li>first it loops over &lt;code>MAKEFILE_LIST&lt;/code> (a list of all lines in the makefile that define a target) using &lt;a href="https://www.freebsd.org/cgi/man.cgi?query=egrep&amp;amp;format=html">&lt;code>egrep&lt;/code>&lt;/a>, and retains the lines that have a &lt;code>##&lt;/code> comment.&lt;/li>
 &lt;li>it then &lt;a href="https://www.freebsd.org/cgi/man.cgi?query=sort&amp;amp;apropos=0&amp;amp;sektion=0&amp;amp;manpath=FreeBSD+12.2-RELEASE+and+Ports&amp;amp;arch=default&amp;amp;format=html">&lt;code>sort&lt;/code>&lt;/a>s the remaining items&lt;/li>
@@ -272,8 +301,8 @@ Let’s break the format string into its parts:
 &lt;p>A nice side effect of &lt;code>## help text&lt;/code> comments on command targets is that it visually separates them from their &amp;ldquo;automatic&amp;rdquo; siblings when reading through the Makefile.&lt;/p>
 &lt;h2 id="makefile-target-re-use">Makefile target re-use&lt;/h2>
 &lt;p>When using Makefiles as a command interface for your repository, it will likely contain targets that can be shared with other repositories in your organization or other projects you work on. The &lt;code>help&lt;/code> target presented above is a prime example. Most Makefiles are self-contained. Their targets are specific to the repository and project they exist in. But Makefiles can &lt;a href="https://www.gnu.org/software/make/manual/html_node/Include.html">include&lt;/a> other Makefiles, which offers a way to bring in common targets.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-makefile" data-lang="makefile">&lt;span style="color:#960050;background-color:#1e0010">-include&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">common.mk&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Makefile includes can live in a different repository, a git submodule, a symlinked directory, etc. The possibilities are endless. The Makefile could even contain bootstrap logic to fetch the included files. If that is the case, ensure the include statements are prefixed with &amp;ldquo;&lt;code>-&lt;/code>&amp;rdquo;. This will ignore import errors and allow targets in the Makefile to run without the include files being present, thus preventing a bootstrap / include catch-22 situation.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-makefile" data-lang="makefile">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">-include&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">common.mk&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Makefile includes can live in a different repository, a git submodule, a symlinked directory, etc. The possibilities are endless. The Makefile could even contain bootstrap logic to fetch the included files. If that is the case, ensure the include statements are prefixed with &amp;ldquo;&lt;code>-&lt;/code>&amp;rdquo;. This will ignore import errors and allow targets in the Makefile to run without the include files being present, thus preventing a bootstrap / include catch-22 situation.&lt;/p>
 &lt;p>Over the past year, I have created Makefiles for various repositories based on the practices outlined above. Shared logic is brought in through git submodules and using make help, command targets are discoverable and documented. As an added bonus, maintaining and improving this toolkit is a great way to &amp;ldquo;get in the zone&amp;rdquo;. I&amp;rsquo;ll be using this wherever appropriate and I hope you will find it useful too. If so, drop me a line!&lt;/p>
 &lt;p>-&lt;a href="https://twitter.com/niels">@niels&lt;/a>&lt;/p>
 &lt;p>btw, here are some resources for writing Makefiles I found helpful:&lt;/p>
@@ -283,10 +312,11 @@ Let’s break the format string into its parts:
 &lt;li>&lt;a href="https://victoria.dev/blog/how-to-create-a-self-documenting-makefile/">How to create a self-documenting Makefile&lt;/a>, by &lt;a href="https://victoria.dev/">Victoria Drake&lt;/a>. Make help.&lt;/li>
 &lt;li>&lt;a href="https://github.com/mrtazz/checkmake">Checkmake&lt;/a>, a Makefile lint tool, conveniently executable from a &lt;a href="https://github.com/cytopia/docker-checkmake">Docker image&lt;/a>, which enables; &lt;code>make lint-make&lt;/code>, a self-check for your Makefile 😜&lt;/li>
 &lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-makefile" data-lang="makefile">&lt;span style="color:#a6e22e">.PHONY&lt;/span>&lt;span style="color:#f92672">:&lt;/span> lint-make
-&lt;span style="color:#a6e22e">lint-make&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#75715e">## Run Checkmake on Makefile (requires docker)
-&lt;/span>&lt;span style="color:#75715e">&lt;/span> @docker run --rm -v &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$$&lt;span style="color:#e6db74">(pwd):/data&amp;#34;&lt;/span> cytopia/checkmake Makefile
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Cover Story</title><link>https://nielsvaneck.com/post/2020-11-14-cover-story/</link><pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate><guid>https://nielsvaneck.com/post/2020-11-14-cover-story/</guid><description>&lt;p>One of the emails I&amp;rsquo;m willingly subscribed to and really look forward to every week, is a newsletter for &lt;a href="https://click.e.economist.com/?qs=40a744e82e6b8ef14518816acca9005a4f2abf4e107c7fe53162e9105ab44571361f517df1567a00415ac1a1f0e190989e9cf23750babafe">subscribers of The Economist&lt;/a> that tells the story of the week&amp;rsquo;s cover choice. While guaranteed to–excuse the pun–cover the news, the newsletter is an always interesting distraction from current events.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-makefile" data-lang="makefile">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">.PHONY&lt;/span>&lt;span style="color:#f92672">:&lt;/span> lint-make
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">lint-make&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#75715e">## Run Checkmake on Makefile (requires docker)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> @docker run --rm -v &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$$&lt;span style="color:#e6db74">(pwd):/data&amp;#34;&lt;/span> cytopia/checkmake Makefile
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Cover Story</title><link>https://nielsvaneck.com/post/2020-11-14-cover-story/</link><pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate><guid>https://nielsvaneck.com/post/2020-11-14-cover-story/</guid><description>&lt;p>One of the emails I&amp;rsquo;m willingly subscribed to and really look forward to every week, is a newsletter for &lt;a href="https://click.e.economist.com/?qs=40a744e82e6b8ef14518816acca9005a4f2abf4e107c7fe53162e9105ab44571361f517df1567a00415ac1a1f0e190989e9cf23750babafe">subscribers of The Economist&lt;/a> that tells the story of the week&amp;rsquo;s cover choice. While guaranteed to–excuse the pun–cover the news, the newsletter is an always interesting distraction from current events.&lt;/p>
 &lt;p>In a few paragraphs, accompanied with sketches and more polished candidates that did not make the final cut, the email describes the creative and journalistic process that lead to that week&amp;rsquo;s magazine newspaper cover image.&lt;/p>
 &lt;p>This week&amp;rsquo;s cover story was fascinating as usual. It meandered past syringe filled images of rocketry, from corona virus symbolism to vaccine technology and ended up at a picture of hope, expressed by the proverbial light at the end of the tunnel.&lt;/p>
 &lt;p>&lt;img src="https://nielsvaneck.com/post/images/40bebca3-2ed5-46a3-93e5-bb13fbb34704-779x1024.jpg" alt="The Economist Cover image for November 14-20, 2020 titled &amp;ldquo;Suddenly, hope&amp;rdquo;Depicting a right curving tunnel, with one of it&amp;rsquo;s segments shaped like a SARS-CoV-2 virus particle. At the end of the tunnel, in a bright light shows a syringe filled with a vaccine dose, standing up like a rocket.">&lt;/p>
@@ -302,164 +332,165 @@ Let’s break the format string into its parts:
 &lt;p>This sparked an idea. If I could define a Python &lt;code>dict&lt;/code> with the right elements and invoke that Stripe utility method, I&amp;rsquo;d be able to define and build Stripe objects on the fly. Sprinkle in a little bit of builder-pattern and I&amp;rsquo;d have a quick, easy and readable way to build all varieties of Stripe objects needed to test my code. That in combination with Mockito (&lt;a href="https://nielsvaneck.com/post/2020-11-10-testing-python-with-mockito/">a great mocking framework for Python&lt;/a>) would make for a very functional and pleasant way of unit testing a Stripe integration built with Python. And that&amp;rsquo;s exactly what I did.&lt;/p>
 &lt;p>Let&amp;rsquo;s look at a quick example of this through an imaginary Stripe integration function that retrieves the amount of an upcoming invoice for a customer defined by an email address.&lt;/p>
 &lt;p>We&amp;rsquo;ll have to look up the customer in Stripe using the email address (bad practice, I know, but bear with me here) and then invoke the API endpoint that returns the upcoming invoice and grab its &lt;code>amount_due&lt;/code> field. Note that &lt;code>Customer.list&lt;/code> returns a collection of Customer objects, even if there&amp;rsquo;s only one element.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#f92672">import&lt;/span> stripe
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">upcoming_amount_due&lt;/span>(customer_email):
-customers &lt;span style="color:#f92672">=&lt;/span> stripe&lt;span style="color:#f92672">.&lt;/span>Customer&lt;span style="color:#f92672">.&lt;/span>list(email&lt;span style="color:#f92672">=&lt;/span>customer_email)
-customer &lt;span style="color:#f92672">=&lt;/span> customers&lt;span style="color:#f92672">.&lt;/span>data[&lt;span style="color:#ae81ff">0&lt;/span>]
-upcoming_invoice &lt;span style="color:#f92672">=&lt;/span> stripe&lt;span style="color:#f92672">.&lt;/span>Invoice&lt;span style="color:#f92672">.&lt;/span>upcoming(customer&lt;span style="color:#f92672">=&lt;/span>customer&lt;span style="color:#f92672">.&lt;/span>id)
-&lt;span style="color:#66d9ef">return&lt;/span> upcoming_invoice&lt;span style="color:#f92672">.&lt;/span>amount_due
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Writing a test for this example would require setting up a fair amount of fixture data as well as several API calls to get the expected state, regardless of whether we would use Stripe&amp;rsquo;s test environment or &lt;code>stripe-mock&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> stripe
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">upcoming_amount_due&lt;/span>(customer_email):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> customers &lt;span style="color:#f92672">=&lt;/span> stripe&lt;span style="color:#f92672">.&lt;/span>Customer&lt;span style="color:#f92672">.&lt;/span>list(email&lt;span style="color:#f92672">=&lt;/span>customer_email)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> customer &lt;span style="color:#f92672">=&lt;/span> customers&lt;span style="color:#f92672">.&lt;/span>data[&lt;span style="color:#ae81ff">0&lt;/span>]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> upcoming_invoice &lt;span style="color:#f92672">=&lt;/span> stripe&lt;span style="color:#f92672">.&lt;/span>Invoice&lt;span style="color:#f92672">.&lt;/span>upcoming(customer&lt;span style="color:#f92672">=&lt;/span>customer&lt;span style="color:#f92672">.&lt;/span>id)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> upcoming_invoice&lt;span style="color:#f92672">.&lt;/span>amount_due
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Writing a test for this example would require setting up a fair amount of fixture data as well as several API calls to get the expected state, regardless of whether we would use Stripe&amp;rsquo;s test environment or &lt;code>stripe-mock&lt;/code>.&lt;/p>
 &lt;p>You&amp;rsquo;d have to create a Customer, ensure a Product structure is set up, then create a Subscription with one Subscription Item to your product and depending on the type of Subscription, you may even have to report some usage in order to trigger an upcoming invoice amount. I won&amp;rsquo;t bore you with a code example of all that, but I hope you agree that that would be a hassle.&lt;/p>
 &lt;p>Here&amp;rsquo;s how that same unit test would be written using the Stripe object builders and Mockito:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#f92672">import&lt;/span> stripe
-&lt;span style="color:#f92672">from&lt;/span> mockito &lt;span style="color:#f92672">import&lt;/span> when
-&lt;span style="color:#f92672">from&lt;/span> unittest &lt;span style="color:#f92672">import&lt;/span> TestCase
-&lt;span style="color:#f92672">from&lt;/span> my_stripe_implementation &lt;span style="color:#f92672">import&lt;/span> upcoming_amount_due
-&lt;span style="color:#f92672">from&lt;/span> my_stripe_builders &lt;span style="color:#f92672">import&lt;/span> &lt;span style="color:#f92672">*&lt;/span>
-&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">StripeUnitTest&lt;/span>(TestCase):
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">test_upcoming_amount_due&lt;/span>(self):
-test_email &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;test@example.com&amp;#34;&lt;/span>
-expected_amount &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">5000&lt;/span>
-customer_builder &lt;span style="color:#f92672">=&lt;/span> StripeCustomerBuilder()
-customer &lt;span style="color:#f92672">=&lt;/span> customer_builder&lt;span style="color:#f92672">.&lt;/span>build()
-customer_list &lt;span style="color:#f92672">=&lt;/span> StripeListBuilder()&lt;span style="color:#f92672">.&lt;/span>add(
-customer_builder)&lt;span style="color:#f92672">.&lt;/span>build()
-when(stripe&lt;span style="color:#f92672">.&lt;/span>Customer)&lt;span style="color:#f92672">.&lt;/span>list(
-email&lt;span style="color:#f92672">=&lt;/span>test_email)&lt;span style="color:#f92672">.&lt;/span>thenReturn(customer_list)
-when(stripe&lt;span style="color:#f92672">.&lt;/span>Invoice)&lt;span style="color:#f92672">.&lt;/span>upcoming(
-customer&lt;span style="color:#f92672">=&lt;/span>customer&lt;span style="color:#f92672">.&lt;/span>id)&lt;span style="color:#f92672">.&lt;/span>thenReturn(
-StripeInvoiceBuilder()
-&lt;span style="color:#f92672">.&lt;/span>amount_due(expected_amount)
-&lt;span style="color:#f92672">.&lt;/span>build())
-self&lt;span style="color:#f92672">.&lt;/span>assertEqual(expected_amount, upcoming_amount_due(test_email))
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Using a combination of pre-defined fixture data and overrides where needed, the object builders allow for quickly setting up test data. The code under test invokes the Stripe API client, but through the use of Mockito, it will receive the test objects.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> stripe
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> mockito &lt;span style="color:#f92672">import&lt;/span> when
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> unittest &lt;span style="color:#f92672">import&lt;/span> TestCase
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> my_stripe_implementation &lt;span style="color:#f92672">import&lt;/span> upcoming_amount_due
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> my_stripe_builders &lt;span style="color:#f92672">import&lt;/span> &lt;span style="color:#f92672">*&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">StripeUnitTest&lt;/span>(TestCase):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">test_upcoming_amount_due&lt;/span>(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> test_email &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;test@example.com&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> expected_amount &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">5000&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> customer_builder &lt;span style="color:#f92672">=&lt;/span> StripeCustomerBuilder()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> customer &lt;span style="color:#f92672">=&lt;/span> customer_builder&lt;span style="color:#f92672">.&lt;/span>build()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> customer_list &lt;span style="color:#f92672">=&lt;/span> StripeListBuilder()&lt;span style="color:#f92672">.&lt;/span>add(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> customer_builder)&lt;span style="color:#f92672">.&lt;/span>build()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> when(stripe&lt;span style="color:#f92672">.&lt;/span>Customer)&lt;span style="color:#f92672">.&lt;/span>list(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> email&lt;span style="color:#f92672">=&lt;/span>test_email)&lt;span style="color:#f92672">.&lt;/span>thenReturn(customer_list)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> when(stripe&lt;span style="color:#f92672">.&lt;/span>Invoice)&lt;span style="color:#f92672">.&lt;/span>upcoming(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> customer&lt;span style="color:#f92672">=&lt;/span>customer&lt;span style="color:#f92672">.&lt;/span>id)&lt;span style="color:#f92672">.&lt;/span>thenReturn(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> StripeInvoiceBuilder()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">.&lt;/span>amount_due(expected_amount)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">.&lt;/span>build())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>assertEqual(expected_amount, upcoming_amount_due(test_email))
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Using a combination of pre-defined fixture data and overrides where needed, the object builders allow for quickly setting up test data. The code under test invokes the Stripe API client, but through the use of Mockito, it will receive the test objects.&lt;/p>
 &lt;p>Yes, for this test, we could have entirely mocked out the objects with Mockito, but when the code under tests uses more of the fields, or when it loops through list of API results, it quickly becomes easier to just build the &amp;ldquo;real thing&amp;rdquo;.&lt;/p>
 &lt;p>Now that you have an idea of how these builders are used, let&amp;rsquo;s take a look under the covers. At the heart of it all lies the base class, &lt;code>StripeObjectBuilder&lt;/code>.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#f92672">import&lt;/span> random
-&lt;span style="color:#f92672">import&lt;/span> string
-&lt;span style="color:#f92672">from&lt;/span> time &lt;span style="color:#f92672">import&lt;/span> time
-&lt;span style="color:#f92672">import&lt;/span> stripe
-&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">StripeObjectBuilder&lt;/span>:
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">_build_data&lt;/span>(self):
-&lt;span style="color:#66d9ef">return&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_data
-&lt;span style="color:#66d9ef">def&lt;/span> __init__(self):
-self&lt;span style="color:#f92672">.&lt;/span>_data &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">None&lt;/span>
-self&lt;span style="color:#f92672">.&lt;/span>_id_str &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;&amp;#39;&lt;/span>&lt;span style="color:#f92672">.&lt;/span>join(random&lt;span style="color:#f92672">.&lt;/span>choice(
-string&lt;span style="color:#f92672">.&lt;/span>ascii_letters &lt;span style="color:#f92672">+&lt;/span> string&lt;span style="color:#f92672">.&lt;/span>digits) &lt;span style="color:#66d9ef">for&lt;/span> _ &lt;span style="color:#f92672">in&lt;/span> range(&lt;span style="color:#ae81ff">16&lt;/span>))
-self&lt;span style="color:#f92672">.&lt;/span>_now_epoch_secs &lt;span style="color:#f92672">=&lt;/span> int(time())
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">_id&lt;/span>(self, prefix: str):
-&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#e6db74">{}&lt;/span>&lt;span style="color:#e6db74">_&lt;/span>&lt;span style="color:#e6db74">{}&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#f92672">.&lt;/span>format(prefix&lt;span style="color:#f92672">.&lt;/span>replace(&lt;span style="color:#e6db74">&amp;#34;_&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>), self&lt;span style="color:#f92672">.&lt;/span>_id_str)
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">build&lt;/span>(self):
-&lt;span style="color:#66d9ef">return&lt;/span> stripe&lt;span style="color:#f92672">.&lt;/span>util&lt;span style="color:#f92672">.&lt;/span>convert_to_stripe_object(self&lt;span style="color:#f92672">.&lt;/span>_build_data())
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">deleted&lt;/span>(self):
-self&lt;span style="color:#f92672">.&lt;/span>_data &lt;span style="color:#f92672">=&lt;/span> dict(
-id&lt;span style="color:#f92672">=&lt;/span>self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;id&amp;#34;&lt;/span>],
-object&lt;span style="color:#f92672">=&lt;/span>self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;object&amp;#34;&lt;/span>],
-deleted&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">True&lt;/span>
-)
-&lt;span style="color:#66d9ef">return&lt;/span> self
-&lt;span style="color:#66d9ef">def&lt;/span> __getattr__(self, field_name):
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">set_data_field&lt;/span>(value):
-self&lt;span style="color:#f92672">.&lt;/span>_data[field_name] &lt;span style="color:#f92672">=&lt;/span> value
-&lt;span style="color:#66d9ef">return&lt;/span> self
-&lt;span style="color:#66d9ef">return&lt;/span> set_data_field
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The object structure will be held in the &lt;code>_data&lt;/code> field. &lt;code>_build_data()&lt;/code> finalizes building of the object structure (reason for this will become apparent when we look at the list object below) which is then passed to &lt;code>stripe.util.convert_to_stripe_object()&lt;/code> by &lt;code>build()&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> random
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> string
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> time &lt;span style="color:#f92672">import&lt;/span> time
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> stripe
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">StripeObjectBuilder&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">_build_data&lt;/span>(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_data
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> __init__(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_data &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">None&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_id_str &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#39;&amp;#39;&lt;/span>&lt;span style="color:#f92672">.&lt;/span>join(random&lt;span style="color:#f92672">.&lt;/span>choice(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> string&lt;span style="color:#f92672">.&lt;/span>ascii_letters &lt;span style="color:#f92672">+&lt;/span> string&lt;span style="color:#f92672">.&lt;/span>digits) &lt;span style="color:#66d9ef">for&lt;/span> _ &lt;span style="color:#f92672">in&lt;/span> range(&lt;span style="color:#ae81ff">16&lt;/span>))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_now_epoch_secs &lt;span style="color:#f92672">=&lt;/span> int(time())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">_id&lt;/span>(self, prefix: str):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#e6db74">{}&lt;/span>&lt;span style="color:#e6db74">_&lt;/span>&lt;span style="color:#e6db74">{}&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#f92672">.&lt;/span>format(prefix&lt;span style="color:#f92672">.&lt;/span>replace(&lt;span style="color:#e6db74">&amp;#34;_&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>), self&lt;span style="color:#f92672">.&lt;/span>_id_str)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">build&lt;/span>(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> stripe&lt;span style="color:#f92672">.&lt;/span>util&lt;span style="color:#f92672">.&lt;/span>convert_to_stripe_object(self&lt;span style="color:#f92672">.&lt;/span>_build_data())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">deleted&lt;/span>(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_data &lt;span style="color:#f92672">=&lt;/span> dict(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> id&lt;span style="color:#f92672">=&lt;/span>self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;id&amp;#34;&lt;/span>],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> object&lt;span style="color:#f92672">=&lt;/span>self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;object&amp;#34;&lt;/span>],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> deleted&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">True&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> )
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> self
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> __getattr__(self, field_name):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">set_data_field&lt;/span>(value):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_data[field_name] &lt;span style="color:#f92672">=&lt;/span> value
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> self
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> set_data_field
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The object structure will be held in the &lt;code>_data&lt;/code> field. &lt;code>_build_data()&lt;/code> finalizes building of the object structure (reason for this will become apparent when we look at the list object below) which is then passed to &lt;code>stripe.util.convert_to_stripe_object()&lt;/code> by &lt;code>build()&lt;/code>.&lt;/p>
 &lt;p>Builder classes for specific Stripe objects will extend &lt;code>StripeObjectBuilder&lt;/code> and define the object structure by setting the &lt;code>_data&lt;/code> field in their constructor.&lt;/p>
 &lt;p>&lt;code>__getattr__&lt;/code> allows overwriting any field in the &lt;code>_data&lt;/code> dict and because &lt;code>self&lt;/code> is returned, these methods can be chained for concise object construction syntax, as illustrated with &lt;code>.amount_due(expected_amount)&lt;/code> in the example above.&lt;/p>
 &lt;p>Many Stripe objects like Customer, Subscription, etcetera have a metadata map for arbitrary key/value storage. We can build convenient support for that with the following extension:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">StripeObjectWithMetadataBuilder&lt;/span>(StripeObjectBuilder):
-&lt;span style="color:#66d9ef">def&lt;/span> __init__(self):
-self&lt;span style="color:#f92672">.&lt;/span>_data &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">None&lt;/span>
-super()&lt;span style="color:#f92672">.&lt;/span>__init__()
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">set_metadata&lt;/span>(self, key: str, value):
-&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#e6db74">&amp;#34;metadata&amp;#34;&lt;/span> &lt;span style="color:#f92672">not&lt;/span> &lt;span style="color:#f92672">in&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_data:
-self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;metadata&amp;#34;&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> dict()
-self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;metadata&amp;#34;&lt;/span>][key] &lt;span style="color:#f92672">=&lt;/span> value
-&lt;span style="color:#66d9ef">return&lt;/span> self
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Before we get to the Customer builder, we need to get one more bit of infrastructure out of the way; Lists. Enter the &lt;code>StripeListBuilder&lt;/code>:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">StripeListBuilder&lt;/span>(StripeObjectBuilder):
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">_build_data&lt;/span>(self):
-self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;data&amp;#34;&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> [item&lt;span style="color:#f92672">.&lt;/span>_build_data() &lt;span style="color:#66d9ef">for&lt;/span> item &lt;span style="color:#f92672">in&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_list_items]
-&lt;span style="color:#66d9ef">return&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_data
-&lt;span style="color:#66d9ef">def&lt;/span> __init__(self):
-super()&lt;span style="color:#f92672">.&lt;/span>__init__()
-self&lt;span style="color:#f92672">.&lt;/span>_list_items &lt;span style="color:#f92672">=&lt;/span> []
-self&lt;span style="color:#f92672">.&lt;/span>_data &lt;span style="color:#f92672">=&lt;/span> dict(
-object&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;list&amp;#34;&lt;/span>,
-data&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">None&lt;/span>,
-has_more&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">False&lt;/span>,
-total_count&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>,
-url&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>,)
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">add&lt;/span>(self, builder: StripeObjectBuilder):
-self&lt;span style="color:#f92672">.&lt;/span>_list_items&lt;span style="color:#f92672">.&lt;/span>append(builder)
-self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;total_count&amp;#34;&lt;/span>] &lt;span style="color:#f92672">+=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>
-&lt;span style="color:#66d9ef">return&lt;/span> self
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Items can be added to the list builder by passing their builder to the &lt;code>add()&lt;/code> method. Note again that self is returned for method chaining. &lt;code>_build_data()&lt;/code> loops through the &lt;code>_list_items&lt;/code> and builds the &lt;code>_data&lt;/code> structure.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">StripeObjectWithMetadataBuilder&lt;/span>(StripeObjectBuilder):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> __init__(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_data &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">None&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> super()&lt;span style="color:#f92672">.&lt;/span>__init__()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">set_metadata&lt;/span>(self, key: str, value):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#e6db74">&amp;#34;metadata&amp;#34;&lt;/span> &lt;span style="color:#f92672">not&lt;/span> &lt;span style="color:#f92672">in&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_data:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;metadata&amp;#34;&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> dict()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;metadata&amp;#34;&lt;/span>][key] &lt;span style="color:#f92672">=&lt;/span> value
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> self
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Before we get to the Customer builder, we need to get one more bit of infrastructure out of the way; Lists. Enter the &lt;code>StripeListBuilder&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">StripeListBuilder&lt;/span>(StripeObjectBuilder):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">_build_data&lt;/span>(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;data&amp;#34;&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> [item&lt;span style="color:#f92672">.&lt;/span>_build_data() &lt;span style="color:#66d9ef">for&lt;/span> item &lt;span style="color:#f92672">in&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_list_items]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_data
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> __init__(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> super()&lt;span style="color:#f92672">.&lt;/span>__init__()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_list_items &lt;span style="color:#f92672">=&lt;/span> []
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_data &lt;span style="color:#f92672">=&lt;/span> dict(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> object&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;list&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">None&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> has_more&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">False&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> total_count&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> url&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>,)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">add&lt;/span>(self, builder: StripeObjectBuilder):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_list_items&lt;span style="color:#f92672">.&lt;/span>append(builder)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;total_count&amp;#34;&lt;/span>] &lt;span style="color:#f92672">+=&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> self
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Items can be added to the list builder by passing their builder to the &lt;code>add()&lt;/code> method. Note again that self is returned for method chaining. &lt;code>_build_data()&lt;/code> loops through the &lt;code>_list_items&lt;/code> and builds the &lt;code>_data&lt;/code> structure.&lt;/p>
 &lt;p>Using this, we can now look at the &lt;code>StripeCustomerBuilder&lt;/code>:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">StripeCustomerBuilder&lt;/span>(StripeObjectWithMetadataBuilder):
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">_build_data&lt;/span>(self):
-self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;sources&amp;#34;&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_sources&lt;span style="color:#f92672">.&lt;/span>_build_data()
-self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;subscriptions&amp;#34;&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_subscriptions&lt;span style="color:#f92672">.&lt;/span>_build_data()
-self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;tax_ids&amp;#34;&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_tax_ids&lt;span style="color:#f92672">.&lt;/span>_build_data()
-&lt;span style="color:#66d9ef">return&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_data
-&lt;span style="color:#66d9ef">def&lt;/span> __init__(self):
-super()&lt;span style="color:#f92672">.&lt;/span>__init__()
-self&lt;span style="color:#f92672">.&lt;/span>_sources &lt;span style="color:#f92672">=&lt;/span> StripeListBuilder()
-self&lt;span style="color:#f92672">.&lt;/span>_subscriptions &lt;span style="color:#f92672">=&lt;/span> StripeListBuilder()
-self&lt;span style="color:#f92672">.&lt;/span>_tax_ids &lt;span style="color:#f92672">=&lt;/span> StripeListBuilder()
-self&lt;span style="color:#f92672">.&lt;/span>_data &lt;span style="color:#f92672">=&lt;/span> dict(
-id&lt;span style="color:#f92672">=&lt;/span>self&lt;span style="color:#f92672">.&lt;/span>_id(&lt;span style="color:#e6db74">&amp;#34;cus&amp;#34;&lt;/span>),
-object&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;customer&amp;#34;&lt;/span>,
-address&lt;span style="color:#f92672">=&lt;/span>dict(
-line1&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;123 main st&amp;#34;&lt;/span>,
-line2&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;apt 4&amp;#34;&lt;/span>,
-city&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;San Francisco&amp;#34;&lt;/span>,
-country&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;US&amp;#34;&lt;/span>,
-postal_code&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;94102&amp;#34;&lt;/span>,
-state&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;CA&amp;#34;&lt;/span>
-),
-currency&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;usd&amp;#34;&lt;/span>,
-created&lt;span style="color:#f92672">=&lt;/span>self&lt;span style="color:#f92672">.&lt;/span>_now_epoch_secs,
-default_source&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">None&lt;/span>,
-description&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;unit test customer 123 &amp;#34;&lt;/span>,
-delinquent&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">False&lt;/span>,
-email&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;test_customer@company.com&amp;#34;&lt;/span>,
-invoice_prefix&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;MYINVPREFIX&amp;#34;&lt;/span>,
-name&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Test Customer&amp;#34;&lt;/span>,
-phone&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;41512367890&amp;#34;&lt;/span>,
-preferred_locales&lt;span style="color:#f92672">=&lt;/span>[&lt;span style="color:#e6db74">&amp;#34;en&amp;#34;&lt;/span>],
-sources&lt;span style="color:#f92672">=&lt;/span>dict(),
-subscriptions&lt;span style="color:#f92672">=&lt;/span>dict(),
-tax_exempt&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;exempt&amp;#34;&lt;/span>,
-tax_ids&lt;span style="color:#f92672">=&lt;/span>dict(),
-)
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">add_subscription_builder&lt;/span>(
-self, subscription_builder: StripeSubscriptionBuilder):
-subscription_builder&lt;span style="color:#f92672">.&lt;/span>customer(self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;id&amp;#34;&lt;/span>])
-self&lt;span style="color:#f92672">.&lt;/span>_subscriptions&lt;span style="color:#f92672">.&lt;/span>add(subscription_builder)
-&lt;span style="color:#66d9ef">return&lt;/span> self
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The constructor defines a basic set of fixture data. Embedded objects, like subscriptions in the subscriptions list can be added using add_&amp;hellip; methods (for brevity, those for &lt;code>sources&lt;/code> and &lt;code>tax_ids&lt;/code> are omitted).&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">StripeCustomerBuilder&lt;/span>(StripeObjectWithMetadataBuilder):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">_build_data&lt;/span>(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;sources&amp;#34;&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_sources&lt;span style="color:#f92672">.&lt;/span>_build_data()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;subscriptions&amp;#34;&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_subscriptions&lt;span style="color:#f92672">.&lt;/span>_build_data()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;tax_ids&amp;#34;&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_tax_ids&lt;span style="color:#f92672">.&lt;/span>_build_data()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> self&lt;span style="color:#f92672">.&lt;/span>_data
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> __init__(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> super()&lt;span style="color:#f92672">.&lt;/span>__init__()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_sources &lt;span style="color:#f92672">=&lt;/span> StripeListBuilder()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_subscriptions &lt;span style="color:#f92672">=&lt;/span> StripeListBuilder()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_tax_ids &lt;span style="color:#f92672">=&lt;/span> StripeListBuilder()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_data &lt;span style="color:#f92672">=&lt;/span> dict(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> id&lt;span style="color:#f92672">=&lt;/span>self&lt;span style="color:#f92672">.&lt;/span>_id(&lt;span style="color:#e6db74">&amp;#34;cus&amp;#34;&lt;/span>),
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> object&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;customer&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> address&lt;span style="color:#f92672">=&lt;/span>dict(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> line1&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;123 main st&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> line2&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;apt 4&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> city&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;San Francisco&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> country&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;US&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> postal_code&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;94102&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> state&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;CA&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ),
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> currency&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;usd&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> created&lt;span style="color:#f92672">=&lt;/span>self&lt;span style="color:#f92672">.&lt;/span>_now_epoch_secs,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> default_source&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">None&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> description&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;unit test customer 123 &amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> delinquent&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">False&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> email&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;test_customer@company.com&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> invoice_prefix&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;MYINVPREFIX&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> name&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Test Customer&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> phone&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;41512367890&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> preferred_locales&lt;span style="color:#f92672">=&lt;/span>[&lt;span style="color:#e6db74">&amp;#34;en&amp;#34;&lt;/span>],
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sources&lt;span style="color:#f92672">=&lt;/span>dict(),
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> subscriptions&lt;span style="color:#f92672">=&lt;/span>dict(),
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> tax_exempt&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;exempt&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> tax_ids&lt;span style="color:#f92672">=&lt;/span>dict(),
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> )
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">add_subscription_builder&lt;/span>(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self, subscription_builder: StripeSubscriptionBuilder):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> subscription_builder&lt;span style="color:#f92672">.&lt;/span>customer(self&lt;span style="color:#f92672">.&lt;/span>_data[&lt;span style="color:#e6db74">&amp;#34;id&amp;#34;&lt;/span>])
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>_subscriptions&lt;span style="color:#f92672">.&lt;/span>add(subscription_builder)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> self
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The constructor defines a basic set of fixture data. Embedded objects, like subscriptions in the subscriptions list can be added using add_&amp;hellip; methods (for brevity, those for &lt;code>sources&lt;/code> and &lt;code>tax_ids&lt;/code> are omitted).&lt;/p>
 &lt;p>The fixture &lt;code>_data&lt;/code> structure is based on the JSON hierarchy in the &lt;a href="https://stripe.com/docs/api/customers/object#customer_object">Customer API documentation&lt;/a>. Any extra fields can be added as needed, depending on your implementation.&lt;/p>
 &lt;p>Using the Customer example above, it&amp;rsquo;s easy to write builders for other Stripe objects. I built them as my integration required new objects and found myself re-using them over and over again.&lt;/p>
 &lt;p>To round things out, here is another example of a complicated set of connected Stripe objects, defined in a few lines using Stripe Object Builders:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">customer &lt;span style="color:#f92672">=&lt;/span> (
-StripeCustomerBuilder()
-&lt;span style="color:#f92672">.&lt;/span>name(&lt;span style="color:#e6db74">&amp;#34;John Doe&amp;#34;&lt;/span>)
-&lt;span style="color:#f92672">.&lt;/span>delinquent(&lt;span style="color:#66d9ef">True&lt;/span>)
-&lt;span style="color:#f92672">.&lt;/span>email(&lt;span style="color:#e6db74">&amp;#34;jdoe@company.com&amp;#34;&lt;/span>)
-&lt;span style="color:#f92672">.&lt;/span>add_subscription_builder(
-StripeSubscriptionBuilder()
-&lt;span style="color:#f92672">.&lt;/span>add_item_builder(StripeItemBuilder(
-StripePlanBuilder()
-&lt;span style="color:#f92672">.&lt;/span>nickname(&lt;span style="color:#e6db74">&amp;#34;3dollarMontly&amp;#34;&lt;/span>)
-&lt;span style="color:#f92672">.&lt;/span>amount(&lt;span style="color:#ae81ff">300&lt;/span>)))
-&lt;span style="color:#f92672">.&lt;/span>add_item_builder(StripeItemBuilder(
-StripePlanBuilder()
-&lt;span style="color:#f92672">.&lt;/span>nickname(&lt;span style="color:#e6db74">&amp;#34;6dollarMonthly&amp;#34;&lt;/span>)
-&lt;span style="color:#f92672">.&lt;/span>amount(&lt;span style="color:#ae81ff">600&lt;/span>)))
-)
-)&lt;span style="color:#f92672">.&lt;/span>build()
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>In 17 lines of code, we build a Customer called John Doe, who can be emailed at &lt;a href="mailto:jdoe@company.com">jdoe@company.com&lt;/a> about his lack of payment for a Subscription to the 3 and 6 dollars a month plan.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>customer &lt;span style="color:#f92672">=&lt;/span> (
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> StripeCustomerBuilder()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">.&lt;/span>name(&lt;span style="color:#e6db74">&amp;#34;John Doe&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">.&lt;/span>delinquent(&lt;span style="color:#66d9ef">True&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">.&lt;/span>email(&lt;span style="color:#e6db74">&amp;#34;jdoe@company.com&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">.&lt;/span>add_subscription_builder(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> StripeSubscriptionBuilder()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">.&lt;/span>add_item_builder(StripeItemBuilder(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> StripePlanBuilder()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">.&lt;/span>nickname(&lt;span style="color:#e6db74">&amp;#34;3dollarMontly&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">.&lt;/span>amount(&lt;span style="color:#ae81ff">300&lt;/span>)))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">.&lt;/span>add_item_builder(StripeItemBuilder(
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> StripePlanBuilder()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">.&lt;/span>nickname(&lt;span style="color:#e6db74">&amp;#34;6dollarMonthly&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">.&lt;/span>amount(&lt;span style="color:#ae81ff">600&lt;/span>)))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> )
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> )&lt;span style="color:#f92672">.&lt;/span>build()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In 17 lines of code, we build a Customer called John Doe, who can be emailed at &lt;a href="mailto:jdoe@company.com">jdoe@company.com&lt;/a> about his lack of payment for a Subscription to the 3 and 6 dollars a month plan.&lt;/p>
 &lt;p>Using object builders like these, I&amp;rsquo;ve written lots of self-contained, readable unit tests for my Stripe integration code. I&amp;rsquo;m not sure if the world needs it, but I have been toying with the idea of creating an open source library that takes the ideas outlined above, combined with Stripe&amp;rsquo;s OpenAPI fixture data, to provide an auto-generated full featured set of object builders for use in any Stripe integration.&lt;/p>
 &lt;p>As always, I hope this was useful to you. If it is, or if you have suggestions, be sure to drop me a line.&lt;/p>
 &lt;p>-&lt;a href="https://twitter.com/niels">@niels&lt;/a>&lt;/p></description></item><item><title>GCloud Dataproc image upgrades &amp; Zeppelin Notebooks</title><link>https://nielsvaneck.com/post/2020-11-10-gcloud-dataproc-image-upgrades-zeppelin-notebooks/</link><pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate><guid>https://nielsvaneck.com/post/2020-11-10-gcloud-dataproc-image-upgrades-zeppelin-notebooks/</guid><description>&lt;p>A &lt;a href="https://cloud.google.com/dataproc/docs/concepts/components/zeppelin">Dataproc&lt;/a> cluster with the &lt;a href="http://zeppelin.apache.org/docs/0.9.0-preview2/">Zeppelin Notebooks&lt;/a> &lt;a href="http://zeppelin.apache.org/docs/0.9.0-preview2/">component&lt;/a> enabled is a great tool for exposing a quick collaboration-, query and insight interface to data-stores in the Google Cloud Platform (GCP).&lt;/p>
@@ -469,12 +500,12 @@ StripePlanBuilder()
 &lt;p>The Zeppelin Notebooks version in the 1.5-debian10 image is a 0.9 variant, while the previous version was 0.8.2 and the Zeppelin Notebook storage format has &lt;a href="http://zeppelin.apache.org/docs/0.9.0-preview2/setup/operation/upgrading.html#upgrading-from-zeppelin-08-to-09">changed with Zeppelin 0.9&lt;/a>.&lt;/p>
 &lt;p>To fix this, the Zeppelin upgrade guide mentions running an update script. I anticipated having to jump through a bunch of hoops to do this, since the Notebooks are stored in a GCS bucket.. but to my surprise, it turned out to be easy.&lt;/p>
 &lt;p>After upgrading the cluster to a 1.5-debian10 or even to the preview-debian10 image, run the following commands from a terminal with appropriately configured GCloud tools:&lt;/p>
-&lt;pre>&lt;code># Backup your notebook directory
-gsutil cp -r &amp;quot;gs://$DATAPROC\_CLUSTER\_STAGING\_BUCKET/notebooks&amp;quot; \\
-&amp;quot;gs://$DATAPROC\_CLUSTER\_STAGING\_BUCKET/notebooks-backup-$(date +&amp;quot;%Y-%m-%d&amp;quot;)&amp;quot;
+&lt;pre tabindex="0">&lt;code># Backup your notebook directory
+gsutil cp -r &amp;#34;gs://$DATAPROC\_CLUSTER\_STAGING\_BUCKET/notebooks&amp;#34; \\
+&amp;#34;gs://$DATAPROC\_CLUSTER\_STAGING\_BUCKET/notebooks-backup-$(date +&amp;#34;%Y-%m-%d&amp;#34;)&amp;#34;
 # Execute the upgrade command
 gcloud compute ssh --project $PROJECT --zone $ZONE \\
-\--command=&amp;quot;/usr/lib/zeppelin/bin/upgrade-note.sh -d&amp;quot;
+\--command=&amp;#34;/usr/lib/zeppelin/bin/upgrade-note.sh -d&amp;#34;
 &lt;/code>&lt;/pre>&lt;p>After running that, your notebooks should show up and work as before. (if the don&amp;rsquo;t, hit the Notebooks ♽ icon to trigger a reload)&lt;/p>
 &lt;p>Hopefully this will save you some time. If you have suggestions or would like to say hi, drop me a line.&lt;/p>
 &lt;p>-&lt;a href="https://twitter.com/niels">@niels&lt;/a>&lt;/p></description></item><item><title>Testing Python with Mockito</title><link>https://nielsvaneck.com/post/2020-11-10-testing-python-with-mockito/</link><pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate><guid>https://nielsvaneck.com/post/2020-11-10-testing-python-with-mockito/</guid><description>&lt;p>A significant percentage of writing software is invoking other bits of software that may or may not be in your control. That sounds straightforward, after all most of this code doesn&amp;rsquo;t even really &amp;ldquo;do&amp;rdquo; anything. But as with most things in life, mistakes are made and thus small bugs find their way into your code.&lt;/p>
@@ -485,42 +516,53 @@ gcloud compute ssh --project $PROJECT --zone $ZONE \\
 &lt;li>A well tested codebase is like a coal mine with a thousand canaries. You&amp;rsquo;ll immediately see the impact of breaking changes.&lt;/li>
 &lt;/ul>
 &lt;p>If your code will be maintained by others in the future, they will value your tests for the same reasons, but in reverse order.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#f92672">import&lt;/span> unittest
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">two_plus_two&lt;/span>():
-&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span>
-&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">SimpleUnitTest&lt;/span>(unittest&lt;span style="color:#f92672">.&lt;/span>TestCase):
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">test_two_plus_two&lt;/span>(self):
-self&lt;span style="color:#f92672">.&lt;/span>assertEqual(&lt;span style="color:#ae81ff">4&lt;/span>, two_plus_two())
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Testing &amp;ldquo;active&amp;rdquo; code is easy. 2 + 2 should always be 4. Your thermostat should turn on the heat when the temperature drops below X, etcetera. All unit test frameworks have great support for this &amp;ldquo;transactional&amp;rdquo; kind of testing, but when all you&amp;rsquo;re trying to do is verify if something calls something else correctly, test code can become quite unwieldy.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#f92672">from&lt;/span> unittest &lt;span style="color:#f92672">import&lt;/span> TestCase
-&lt;span style="color:#f92672">from&lt;/span> unittest.mock &lt;span style="color:#f92672">import&lt;/span> patch
-&lt;span style="color:#f92672">import&lt;/span> imaginary_math_library
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">two_plus_two&lt;/span>():
-&lt;span style="color:#66d9ef">return&lt;/span> imaginary_math_library&lt;span style="color:#f92672">.&lt;/span>add(&lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>)
-&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">SimpleUnitTestMockTest&lt;/span>(TestCase):
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">test_two_plus_two&lt;/span>(self):
-&lt;span style="color:#66d9ef">with&lt;/span> patch&lt;span style="color:#f92672">.&lt;/span>object(imaginary_math_library, &lt;span style="color:#e6db74">&amp;#39;add&amp;#39;&lt;/span>, \
-return_value&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">4&lt;/span>) &lt;span style="color:#66d9ef">as&lt;/span> mock_add:
-&lt;span style="color:#75715e"># Test outcome&lt;/span>
-self&lt;span style="color:#f92672">.&lt;/span>assertEqual(&lt;span style="color:#ae81ff">4&lt;/span>, two_plus_two())
-&lt;span style="color:#75715e"># ensure &amp;#39;add&amp;#39; was called correctly&lt;/span>
-mock_add&lt;span style="color:#f92672">.&lt;/span>assert_called_once_with(&lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>)
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Python&amp;rsquo;s &lt;a href="https://docs.python.org/3/library/unittest.html">unittest&lt;/a> framework offers the &lt;a href="https://docs.python.org/3/library/unittest.mock.html">mock&lt;/a> library, which lets you define fake methods that can verify wether they were called as intended. In the example above, &lt;code>patch.object&lt;/code> temporarily overwrites the &lt;code>add&lt;/code> method on &lt;code>imaginary_math_library&lt;/code> with a mock that always returns 4. When &lt;code>two_plus_two()&lt;/code> is called in the test, it will invoke the mock &lt;code>add&lt;/code> method.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> unittest
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">two_plus_two&lt;/span>():
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">SimpleUnitTest&lt;/span>(unittest&lt;span style="color:#f92672">.&lt;/span>TestCase):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">test_two_plus_two&lt;/span>(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>assertEqual(&lt;span style="color:#ae81ff">4&lt;/span>, two_plus_two())
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Testing &amp;ldquo;active&amp;rdquo; code is easy. 2 + 2 should always be 4. Your thermostat should turn on the heat when the temperature drops below X, etcetera. All unit test frameworks have great support for this &amp;ldquo;transactional&amp;rdquo; kind of testing, but when all you&amp;rsquo;re trying to do is verify if something calls something else correctly, test code can become quite unwieldy.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> unittest &lt;span style="color:#f92672">import&lt;/span> TestCase
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> unittest.mock &lt;span style="color:#f92672">import&lt;/span> patch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> imaginary_math_library
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">two_plus_two&lt;/span>():
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> imaginary_math_library&lt;span style="color:#f92672">.&lt;/span>add(&lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">SimpleUnitTestMockTest&lt;/span>(TestCase):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">test_two_plus_two&lt;/span>(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">with&lt;/span> patch&lt;span style="color:#f92672">.&lt;/span>object(imaginary_math_library, &lt;span style="color:#e6db74">&amp;#39;add&amp;#39;&lt;/span>, \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> return_value&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">4&lt;/span>) &lt;span style="color:#66d9ef">as&lt;/span> mock_add:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># Test outcome&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>assertEqual(&lt;span style="color:#ae81ff">4&lt;/span>, two_plus_two())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># ensure &amp;#39;add&amp;#39; was called correctly&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mock_add&lt;span style="color:#f92672">.&lt;/span>assert_called_once_with(&lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Python&amp;rsquo;s &lt;a href="https://docs.python.org/3/library/unittest.html">unittest&lt;/a> framework offers the &lt;a href="https://docs.python.org/3/library/unittest.mock.html">mock&lt;/a> library, which lets you define fake methods that can verify wether they were called as intended. In the example above, &lt;code>patch.object&lt;/code> temporarily overwrites the &lt;code>add&lt;/code> method on &lt;code>imaginary_math_library&lt;/code> with a mock that always returns 4. When &lt;code>two_plus_two()&lt;/code> is called in the test, it will invoke the mock &lt;code>add&lt;/code> method.&lt;/p>
 &lt;p>The mock library works great, there are even some nice touches like the &lt;code>patch&lt;/code> context manager–used above–that are a great improvement over building your own mock objects and patching them into code under test. However, when you get serious with it, things become &lt;strong>verbose&lt;/strong> in a hurry. The reason for this verbosity is that it separates mock definition from call verification. Furthermore, mocks have to be &amp;ldquo;manually&amp;rdquo; injected or patched into code under test.&lt;/p>
 &lt;p>I have fond memories from back in the day when I wrote Java (a language normally regarded as one that re-defines the word verbose) of using a framework that offered a quick and simple way of applying mocks in unit testing, &lt;a href="https://site.mockito.org">Mockito&lt;/a>. Mockito uses a builder-pattern-like chained-method syntax that combines mock definition and installation. Verification is still done through separate calls, but despite that, tests written with Mockito are concise and readable.&lt;/p>
 &lt;p>One can only imagine my surprise and delight when, while looking around for ways to test Python code earlier this year, I stumbled upon &lt;a href="https://github.com/kaste/mockito-python">mockito-python&lt;/a>, a Python implementation of the aforementioned Java library.&lt;/p>
 &lt;p>Mockito-python (Mockito hereafter) takes a host of great features from it&amp;rsquo;s Java namesake and throws in a few extra to make things even better. Not only does it combine mock installation and definition in the same statements, expectations get set up simultaneously. This means that calls with unexpected parameters automatically cause test failures. Using Mockito, our little example is implemented this way:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-python" data-lang="python">&lt;span style="color:#f92672">from&lt;/span> unittest &lt;span style="color:#f92672">import&lt;/span> TestCase
-&lt;span style="color:#f92672">from&lt;/span> mockito &lt;span style="color:#f92672">import&lt;/span> when, verifyStubbedInvocationsAreUsed
-&lt;span style="color:#f92672">import&lt;/span> imaginary_math_library
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">two_plus_two&lt;/span>():
-&lt;span style="color:#66d9ef">return&lt;/span> imaginary_math_library&lt;span style="color:#f92672">.&lt;/span>add(&lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>)
-&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">SimpleMockitoTest&lt;/span>(TestCase):
-&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">test_two_plus_two&lt;/span>(self):
-when(imaginary_math_library)&lt;span style="color:#f92672">.&lt;/span>add(&lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>)&lt;span style="color:#f92672">.&lt;/span>thenReturn(&lt;span style="color:#ae81ff">4&lt;/span>)
-self&lt;span style="color:#f92672">.&lt;/span>assertEqual(&lt;span style="color:#ae81ff">4&lt;/span>, two_plus_two())
-verifyStubbedInvocationsAreUsed()
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>verifyStubbedInvocationsAreUsed&lt;/code> will ensure that all mocks defined in a test are used. This is a feature that is absent from the Java library. It only needs to be called once, in contrast to explicit call verification which has to happen for every expected call in a test.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> unittest &lt;span style="color:#f92672">import&lt;/span> TestCase
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">from&lt;/span> mockito &lt;span style="color:#f92672">import&lt;/span> when, verifyStubbedInvocationsAreUsed
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> imaginary_math_library
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">two_plus_two&lt;/span>():
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> imaginary_math_library&lt;span style="color:#f92672">.&lt;/span>add(&lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">SimpleMockitoTest&lt;/span>(TestCase):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">def&lt;/span> &lt;span style="color:#a6e22e">test_two_plus_two&lt;/span>(self):
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> when(imaginary_math_library)&lt;span style="color:#f92672">.&lt;/span>add(&lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>)&lt;span style="color:#f92672">.&lt;/span>thenReturn(&lt;span style="color:#ae81ff">4&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> self&lt;span style="color:#f92672">.&lt;/span>assertEqual(&lt;span style="color:#ae81ff">4&lt;/span>, two_plus_two())
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> verifyStubbedInvocationsAreUsed()
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>verifyStubbedInvocationsAreUsed&lt;/code> will ensure that all mocks defined in a test are used. This is a feature that is absent from the Java library. It only needs to be called once, in contrast to explicit call verification which has to happen for every expected call in a test.&lt;/p>
 &lt;p>Depending on the nature of your test suite, &lt;code>verifyStubbedInvocationsAreUsed&lt;/code> can be invoked from a &lt;code>tearDown()&lt;/code> method. This is also where you should invoke &lt;code>mockito.unstub()&lt;/code> which undoes all changes applied by Mockito, to prevent the next test from being surprised by side-effects.&lt;/p>
 &lt;p>Mockito offers a whole host of argument &lt;a href="https://mockito-python.readthedocs.io/en/latest/the-matchers.html">Matchers&lt;/a> that can be used to describe parameter expectations and you can use an argument Captor to inspect parameters even further. Mocked methods can return fixed values, raise errors and even execute lambdas if dynamic results are needed in your test.&lt;/p>
 &lt;p>The whole thing is &lt;a href="https://mockito-python.readthedocs.io/en/latest/">very well documented&lt;/a> and a joy to use. I&amp;rsquo;ve written a slew of test code with Mockito over the course of this year. Doing so has helped me find a bunch of silly bugs and most of all has helped me build confidence in my code-even the trivial parts!&lt;/p>

@@ -1,9 +1,65 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>make</title><style>html body{font-family:raleway,sans-serif;font-size:16px;background-color:#fff}:root{--accent:#08c;--border-width:0}</style><link rel=stylesheet href=https://nielsvaneck.com/css/main.css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Raleway"><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=anonymous><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/sql.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/makefile.min.js></script><script>hljs.initHighlightingOnLoad()</script><script src=https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js></script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa crossorigin=anonymous></script><script>$(document).on('click',function(){$('.collapse').collapse('hide')})</script><meta name=generator content="Hugo 0.85.0"><link href=/tags/make/index.xml rel=alternate type=application/rss+xml title="niels van eck"><link href=/tags/make/index.xml rel=feed type=application/rss+xml title="niels van eck"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-48666603-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-48666603-1')</script><script type=text/javascript async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></head><body><nav class="navbar navbar-default navbar-fixed-top"><div class=container><div class=navbar-header><a class="navbar-brand visible-xs" href=#>make</a>
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>make</title><style>html body{font-family:raleway,sans-serif;font-size:16px;background-color:#fff}:root{--accent:#08c;--border-width:0}</style><link rel=stylesheet href=https://nielsvaneck.com/css/main.css>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css>
+<link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=anonymous>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/sql.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/makefile.min.js></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js></script>
+<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa crossorigin=anonymous></script>
+<script>$(document).on("click",function(){$(".collapse").collapse("hide")})</script>
+<meta name=generator content="Hugo 0.93.0">
+<link href=/tags/make/index.xml rel=alternate type=application/rss+xml title="niels van eck">
+<link href=/tags/make/index.xml rel=feed type=application/rss+xml title="niels van eck">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48666603-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-48666603-1")</script>
+<script type=text/javascript async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head><body>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class=container>
+<div class=navbar-header>
+<a class="navbar-brand visible-xs" href=#>make</a>
 <button class=navbar-toggle data-target=.navbar-collapse data-toggle=collapse>
-<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button></div><div class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href=/>Home</a></li><li><a href=/post/>Posts</a></li><li><a href=/about/>About</a></li></ul><ul class="nav navbar-nav navbar-right"><li class=navbar-icon><a href=https://github.com/nielsvaneck/><i class="fab fa-github"></i></a></li><li class=navbar-icon><a href=https://twitter.com/niels/><i class="fab fa-twitter"></i></a></li><li class=navbar-icon><a href=https://www.linkedin.com/in/nielsvaneck/><i class="fab fa-linkedin"></i></a></li><li class=navbar-icon><a href=https://nielsvaneck.com/index.xml><i class="fas fa-rss"></i></a></li></ul></div></div></nav><main><h2>make</h2><div class=item><h4><a href=/post/2021-05-18-automating-npm-install/>Automating npm install</a></h4><h5>May 18, 2021</h5><a href=https://nielsvaneck.com/tags/devops><kbd class=item-tag>devops</kbd></a>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+</div><div class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li><a href=/>Home</a></li><li><a href=/post/>Posts</a></li><li><a href=/about/>About</a></li></ul><ul class="nav navbar-nav navbar-right">
+<li class=navbar-icon><a href=https://github.com/nielsvaneck/><i class="fab fa-github"></i></a></li><li class=navbar-icon><a href=https://twitter.com/niels/><i class="fab fa-twitter"></i></a></li><li class=navbar-icon><a href=https://www.linkedin.com/in/nielsvaneck/><i class="fab fa-linkedin"></i></a></li><li class=navbar-icon><a href=https://nielsvaneck.com/index.xml><i class="fas fa-rss"></i></a></li></ul></div></div></nav><main>
+<h2>make</h2><div class=item>
+<h4><a href=/post/2021-05-18-automating-npm-install/>Automating npm install</a></h4><h5>May 18, 2021</h5>I&rsquo;ve previously written about using Make as a command interface for your repository and the other day, I ran into a situation where using Makefiles takes away a real-life annoyance for teams working on NodeJS and other Javascript or TypeScript based projects.
+When growing teams work in repositories that use NPM for Yarn for package management, dependency updates will enter the local workspace frequently when the main branch is pulled. Unless you&rsquo;re religious about running npm install after every git pull, updating local dependencies of often omitted and sometimes leads to confusing red herring bugs or in the very least, lost time...<br>
+<br>
+<a href=https://nielsvaneck.com/tags/devops><kbd class=item-tag>devops</kbd></a>
 <a href=https://nielsvaneck.com/tags/make><kbd class=item-tag>make</kbd></a>
-<a href=https://nielsvaneck.com/tags/npm><kbd class=item-tag>npm</kbd></a></div><div class=item><h4><a href=/post/2021-01-20-rendering-mermaid-graphs-in-markdown-on-github/>Rendering Mermaid graphs in Markdown on GitHub</a></h4><h5>January 20, 2021</h5><a href=https://nielsvaneck.com/tags/make><kbd class=item-tag>make</kbd></a>
+<a href=https://nielsvaneck.com/tags/npm><kbd class=item-tag>npm</kbd></a>
+<hr>
+</div><div class=item>
+<h4><a href=/post/2021-01-20-rendering-mermaid-graphs-in-markdown-on-github/>Rendering Mermaid graphs in Markdown on GitHub</a></h4><h5>January 20, 2021</h5>When writing documentation for software, sooner or later you&rsquo;re going to hit the point at which a picture will explain in a glance what you would have a hard time describing in the proverbial &ldquo;thousand words&rdquo;. While documenting something technical, this usually means diving into the drawing section of whatever editor you&rsquo;re using and wrangling with lines and boxes until you&rsquo;re satisfied with your masterpiece or you&rsquo;ve exhausted your patience with the tool...<br>
+<br>
+<a href=https://nielsvaneck.com/tags/make><kbd class=item-tag>make</kbd></a>
 <a href=https://nielsvaneck.com/tags/mermaid><kbd class=item-tag>mermaid</kbd></a>
 <a href=https://nielsvaneck.com/tags/markdown><kbd class=item-tag>markdown</kbd></a>
-<a href=https://nielsvaneck.com/tags/github><kbd class=item-tag>github</kbd></a></div><div class=item><h4><a href=/post/2020-11-21-make-as-a-command-interface-to-your-repository/>“Make” as a command interface to your repository</a></h4><h5>November 21, 2020</h5><a href=https://nielsvaneck.com/tags/devops><kbd class=item-tag>devops</kbd></a>
-<a href=https://nielsvaneck.com/tags/make><kbd class=item-tag>make</kbd></a></div></main><footer><p class="copyright text-muted">© All rights reserved. Powered by <a href=https://gohugo.io>Hugo</a> and <a href=https://github.com/calintat/minimal>Minimal</a>.</p></footer></body></html>
+<a href=https://nielsvaneck.com/tags/github><kbd class=item-tag>github</kbd></a>
+<hr>
+</div><div class=item>
+<h4><a href=/post/2020-11-21-make-as-a-command-interface-to-your-repository/>“Make” as a command interface to your repository</a></h4><h5>November 21, 2020</h5>Back in 1976, when Make first entered the scene, it solved the problem of automating dependency aware software builds. By defining what sources a build target operates on, it could automatically determine what should be compiled based on what files had changed, thus saving on computing time while guaranteeing correct builds.
+Command vs Automatic Targets The ability to define build targets that could be invoked from the command line as make arguments, quickly lead to Make being used for other tasks than just building software, think of make install for example...<br>
+<br>
+<a href=https://nielsvaneck.com/tags/devops><kbd class=item-tag>devops</kbd></a>
+<a href=https://nielsvaneck.com/tags/make><kbd class=item-tag>make</kbd></a>
+<hr>
+</div></main><footer>
+<p class="copyright text-muted">© All rights reserved. Powered by <a href=https://gohugo.io>Hugo</a> and <a href=https://github.com/calintat/minimal>Minimal</a>.</p></footer></body></html>

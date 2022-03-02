@@ -22,8 +22,16 @@ img {
 
 /* Homepage */
 
-.intro {
-    transform: translateY(22vh);
+@media (min-width:701px) {
+    .intro {
+        transform: translateY(10vh);
+    }
+}
+
+@media (min-width:801px) {
+    .intro {
+        transform: translateY(22vh);
+    }
 }
 
 .intro > h1 {
